@@ -1,0 +1,58 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Hedvig+Letters+Sans&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Outfit:wght@100..900&family=PT+Serif+Caption:ital@0;1&family=REM:ital,wght@0,100..900;1,100..900&family=Revalia&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Doppio+One&family=Hedvig+Letters+Sans&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Outfit:wght@100..900&family=PT+Serif+Caption:ital@0;1&family=REM:ital,wght@0,100..900;1,100..900&family=Revalia&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Doppio+One&family=Hedvig+Letters+Sans&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Outfit:wght@100..900&family=PT+Serif+Caption:ital@0;1&family=REM:ital,wght@0,100..900;1,100..900&family=Racing+Sans+One&family=Red+Rose:wght@300..700&family=Revalia&family=Rubik:ital,wght@0,300..900;1,300..900&family=Varela+Round&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Corben:wght@400;700&family=Doppio+One&family=Hedvig+Letters+Sans&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Outfit:wght@100..900&family=PT+Serif+Caption:ital@0;1&family=REM:ital,wght@0,100..900;1,100..900&family=Racing+Sans+One&family=Red+Rose:wght@300..700&family=Revalia&family=Rubik:ital,wght@0,300..900;1,300..900&family=Varela+Round&family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap'); */
+
+
+@import "tailwindcss";
+
+/* New Color Palette - Based on Logo */
+:root {
+  --color-primary: #0a1628;
+  --color-primary-light: #1a2a42;
+  --color-secondary: #4fd1c5;
+  --color-secondary-light: #81e6d9;
+  --color-accent: #f6e05e;
+  --color-accent-dark: #d69e2e;
+  --color-surface: #1a202c;
+  --color-surface-light: #2d3748;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #a0aec0;
+  --color-border: #4a5568;
+}
+
+@font-face {
+  font-family: 'Ariata Pro Text';
+  font-weight: bold;
+  src: url('./assets/fonts/Ariata\ Text\ Bold.otf') format('truetype'); /* Adjust the path if needed */
+}
+
+* {
+  /* font-family: "Inter", sans-serif; */
+    font-family: "REM", sans-serif;
+      /* font-family: "Doppio One", sans-serif; */
+  /* font-family: "Varela Round", sans-serif; */
+  /* font-family: "Red Rose", serif; */
+
+  box-sizing: border-box;
+  /* margin: 0; */
+  /* padding: 0; */
+}
+
+html, body {
+  /* overflow: hidden;  Hides the scrollbar */
+  /* -ms-overflow-style: none;  For Internet Explorer */
+  scrollbar-width: none;
+  background-color: var(--color-primary);
+}
+
+.font-for-heading {
+  /* font-family: 'Ariata Pro Text', sans-serif !important; */
+      font-family: "REM", sans-serif;
+  font-weight: bold;
+}
