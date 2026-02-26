@@ -146,7 +146,20 @@ const HomeSlider = () => {
             />
             <div className="carousel-content">
               <div className="carousel-content-wrapper">
-                <p className="carousel-title">{slide.title}</p>
+                <div className="carousel-stats-row">
+                  <div className="carousel-stat-item">
+                    <span className="carousel-stat-number">600 Cr+</span>
+                    <span className="carousel-stat-label">Annual Turnover</span>
+                  </div>
+                  <div className="carousel-stat-item">
+                    <span className="carousel-stat-number">500+</span>
+                    <span className="carousel-stat-label">Employees</span>
+                  </div>
+                  <div className="carousel-stat-item">
+                    <span className="carousel-stat-number">50,000+</span>
+                    <span className="carousel-stat-label">Happy Customers</span>
+                  </div>
+                </div>
                 <h2 className="carousel-heading">{slide.heading}</h2>
                 <p className="carousel-description">{slide.description}</p>
                 <button

@@ -49,10 +49,32 @@
   text-align: center;
 }
 
-.carousel-title {
-  font-size: 1.2rem;
+.carousel-stats-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 15px;
+}
+
+.carousel-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.carousel-stat-number {
+  font-size: 2rem;
+  font-weight: 800;
   color: #4fd1c5;
-  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.carousel-stat-label {
+  font-size: 0.9rem;
+  color: #d0d0d0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .carousel-heading {
@@ -118,9 +140,22 @@
   }
 
   .carousel-content-wrapper {
-width: 90%;
-        position: relative;
-        top: 18px;  }
+    width: 90%;
+    position: relative;
+    top: 18px;
+  }
+
+  .carousel-stats-row {
+    gap: 15px;
+  }
+
+  .carousel-stat-number {
+    font-size: 1.3rem;
+  }
+
+  .carousel-stat-label {
+    font-size: 0.7rem;
+  }
 }
 
 
