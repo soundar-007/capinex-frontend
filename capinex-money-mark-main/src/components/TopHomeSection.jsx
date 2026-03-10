@@ -56,7 +56,7 @@ const Hero = () => {
   const steps = [
     { title: 'Apply', color: 'from-blue-500 to-blue-600' },
     { title: 'Approve', color: 'from-green-500 to-green-600' },
-    { title: 'Fund', color: 'from-yellow-500 to-orange-500' }
+    { title: 'Fund', color: 'from-sky-500 to-sky-600' }
   ];
 
   const slideImages = [
@@ -362,7 +362,7 @@ const handleApplyNow = () => {
 
                   {/* Progress line fill */}
                   <div
-                    className="absolute top-1/2 left-0 h-0.5 bg-gradient-to-r from-yellow-500 to-orange-500 transform -translate-y-1/2 rounded-full transition-all duration-1000 ease-out"
+                    className="absolute top-1/2 left-0 h-0.5 bg-gradient-to-r from-sky-400 to-sky-600 transform -translate-y-1/2 rounded-full transition-all duration-1000 ease-out"
                     style={{
                       width: `${((activeStep + 1) / steps.length) * 100}%`,
                     }}
@@ -387,7 +387,7 @@ const handleApplyNow = () => {
                           )}
 
                           {activeStep === index && (
-                            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-yellow-500/30 to-orange-500/30 animate-ping"></div>
+                            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-sky-400/30 to-sky-600/30 animate-ping"></div>
                           )}
                         </button>
 
@@ -396,7 +396,7 @@ const handleApplyNow = () => {
                           <div
                             className={`font-medium text-xs transition-all duration-300 ${
                               activeStep === index
-                                ? "text-yellow-400 scale-105"
+                                ? "text-sky-400 scale-105"
                                 : "text-blue-200"
                             }`}
                           >
@@ -417,7 +417,7 @@ const handleApplyNow = () => {
                       key={index}
                       className={`flex items-center space-x-2 px-3 py-2 rounded-full text-xs font-medium transition-all duration-300 ${
                         activeStep === index
-                          ? "bg-gradient-to-r from-yellow-500 to-orange-500 text-white"
+                          ? "bg-gradient-to-r from-sky-500 to-sky-600 text-white"
                           : "bg-gray-700/50 text-gray-300"
                       }`}
                     >

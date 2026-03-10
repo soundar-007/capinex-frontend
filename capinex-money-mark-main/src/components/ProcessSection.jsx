@@ -138,13 +138,13 @@ const steps =
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16 animate-fade-in-up">
           <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-full px-6 py-3 mb-6">
-            <Zap className="w-5 h-5 text-yellow-400" />
-            <span className="text-sm font-semibold text-yellow-400">SIMPLE PROCESS</span>
+            <Zap className="w-5 h-5 text-[#0EA5E9]" />
+            <span className="text-sm font-semibold text-[#0EA5E9]">SIMPLE PROCESS</span>
           </div>
           
           <h2 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
             {loanName === "home-loan" ? 'How the Home Loan Process' : ' How It'}
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 animate-gradient">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#0EA5E9] via-sky-500 to-[#002060] animate-gradient">
               Works
             </span>
           </h2>
@@ -153,9 +153,9 @@ const steps =
             Simple 3-Step Process to Get Your Loan
           </p>
           
-          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 backdrop-blur-sm rounded-full px-8 py-4 border border-yellow-500/30">
+          <div className="inline-flex items-center gap-3 bg-gradient-to-r from-sky-500/20 to-sky-700/20 backdrop-blur-sm rounded-full px-8 py-4 border border-sky-500/30">
             <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-            <span className="text-yellow-300 font-semibold">
+            <span className="text-[#0EA5E9] font-semibold">
               💰 Funds usually reach your bank account in just a few hours!
             </span>
           </div>
@@ -167,7 +167,7 @@ const steps =
             {/* Progress line */}
             <div className="absolute top-1/2 left-0 right-0 h-1 bg-gradient-to-r from-gray-600 via-gray-600 to-gray-600 transform -translate-y-1/2 rounded-full"></div>
             <div 
-              className="absolute top-1/2 left-0 h-1 bg-gradient-to-r from-yellow-500 to-orange-500 transform -translate-y-1/2 rounded-full transition-all duration-1000 ease-out"
+              className="absolute top-1/2 left-0 h-1 bg-gradient-to-r from-sky-400 to-sky-600 transform -translate-y-1/2 rounded-full transition-all duration-1000 ease-out"
               style={{ width: `${((activeStep + 1) / steps.length) * 100}%` }}
             ></div>
             
@@ -191,14 +191,14 @@ const steps =
                     
                     {/* Ripple effect for active step */}
                     {activeStep === index && (
-                      <div className="absolute inset-0 rounded-full bg-gradient-to-r from-yellow-500/30 to-orange-500/30 animate-ping"></div>
+                      <div className="absolute inset-0 rounded-full bg-gradient-to-r from-sky-400/30 to-sky-600/30 animate-ping"></div>
                     )}
                   </button>
                   
                   {/* Step title */}
                   <div className="absolute top-24 left-1/2 transform -translate-x-1/2 text-center min-w-max">
                     <div className={`font-semibold text-sm transition-all duration-300 ${
-                      activeStep === index ? 'text-yellow-400 scale-110' : 'text-blue-200'
+                      activeStep === index ? 'text-sky-400 scale-110' : 'text-blue-200'
                     }`}>
                       {step.title}
                     </div>
@@ -285,7 +285,7 @@ const steps =
           
           <div className="animate-fade-in-right">
             <div className="relative group">
-              <div className="absolute -inset-4 bg-gradient-to-r from-yellow-500/20 to-orange-500/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+              <div className="absolute -inset-4 bg-gradient-to-r from-sky-400/20 to-sky-600/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
               
               <div className="relative">
                 <img 

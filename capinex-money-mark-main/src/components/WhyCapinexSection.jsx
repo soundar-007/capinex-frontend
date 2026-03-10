@@ -57,7 +57,7 @@ const WhyCapinexSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in-up">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <Star className="w-8 h-8 text-yellow-400 fill-current" />
+            <Star className="w-8 h-8 text-[#0EA5E9] fill-current" />
             <h2 className="text-4xl font-bold">Why Capinex?</h2>
           </div>
           <p className="text-xl text-blue-100 max-w-3xl mx-auto">
@@ -73,7 +73,7 @@ const WhyCapinexSection = () => {
               className="text-center p-6 bg-white/10 backdrop-blur-sm rounded-xl animate-fade-in-up"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="text-3xl font-bold text-yellow-400 mb-2">{stat.number}</div>
+              <div className="text-3xl font-bold text-[#0EA5E9] mb-2">{stat.number}</div>
               <div className="text-blue-100">{stat.label}</div>
             </div>
           ))}
@@ -88,7 +88,7 @@ const WhyCapinexSection = () => {
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="flex items-center gap-4 mb-4">
-                <div className="bg-gradient-to-r from-yellow-500 to-orange-500 p-3 rounded-full">
+                <div className="bg-gradient-to-r from-[#0EA5E9] to-[#002060] p-3 rounded-full">
                   <feature.icon className="w-6 h-6 text-white" />
                 </div>
                 <CheckCircle className="w-6 h-6 text-green-400" />
@@ -101,7 +101,7 @@ const WhyCapinexSection = () => {
         
         {/* Enhanced CTA Section */}
         <div className="mt-20 text-center">
-          <div className="bg-gradient-to-r from-yellow-500/10 via-orange-500/10 to-red-500/10 backdrop-blur-sm p-12 rounded-3xl border border-white/10 shadow-2xl">
+          <div className="bg-gradient-to-r from-[#002060]/20 via-[#0EA5E9]/10 to-sky-400/10 backdrop-blur-sm p-12 rounded-3xl border border-white/10 shadow-2xl">
             <div className="max-w-3xl mx-auto">
               <h3 className="text-4xl font-bold mb-4">
                 Ready to Get Started?
@@ -111,7 +111,7 @@ const WhyCapinexSection = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                <button onClick={() => navigate('/contact-us')} className="cursor-pointer bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-white font-bold py-5 px-10 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl flex items-center gap-3 text-lg">
+                <button onClick={() => navigate('/contact-us')} className="cursor-pointer bg-gradient-to-r from-[#0EA5E9] to-sky-600 hover:from-sky-500 hover:to-sky-700 text-white font-bold py-5 px-10 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl flex items-center gap-3 text-lg">
                   <Zap className="w-6 h-6" />
                   Apply Now - It's Free!
                 </button>

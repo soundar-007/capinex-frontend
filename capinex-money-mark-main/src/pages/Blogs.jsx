@@ -168,7 +168,7 @@ function App() {
               <div className="md:w-1/2 p-8 flex flex-col justify-between">
                 <div>
                   <p className="text-sm text-gray-300 mb-2">{item.category}</p>
-                  <span className="bg-yellow-300 text-black text-sm font-semibold px-3 py-1 rounded-full mb-4 inline-block">
+                  <span className="bg-[#0EA5E9] text-white text-sm font-semibold px-3 py-1 rounded-full mb-4 inline-block">
                     Top Stories
                   </span>
                   <h2 className="text-3xl sm:text-4xl font-bold mb-6 leading-tight">

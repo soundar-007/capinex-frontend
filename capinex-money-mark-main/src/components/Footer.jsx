@@ -8,18 +8,18 @@ import {
   FaFacebookF,
 } from "react-icons/fa";
 import { Globe } from "lucide-react";
-import CompanyLogo from "../assets/Untitled design (11).png";
-import CompanyLogo2 from "../assets/Untitled design (11).png";
+import CompanyLogo from "../assets/logo.png";
+import CompanyLogo2 from "../assets/logo.png";
 
 export const Footer = () => {
   return (
-    <footer className="bg-[#0a1628] text-white px-6 md:px-16 pt-14 pb-10 text-sm">
+    <footer className="bg-[#002060] text-white px-6 md:px-16 pt-14 pb-10 text-sm">
       {/* Row 1: Main Columns */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Column 1: Logos + About */}
         <div>
-          <div className="flex items-center gap-3 mb-4">
-            <img src={CompanyLogo2} alt="Company Logo 2" className="h-10" />
+          <div className="flex items-center gap-3 mb-6">
+            <img src={CompanyLogo2} alt="Company Logo 2" className="h-[100px] sm:h-[120px] object-contain w-auto" />
           </div>
           <p className="text-gray-400 mb-2">
             Capinex Inc. is an all-in-one financial ecosystem, helping 10
@@ -156,7 +156,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {[1, 2, 3, 4].map((_, i) => (
             <div className="mt-4" key={i}>
-              <h4 className="font-semibold mb-2 text-cyan-400">
+              <h4 className="font-semibold mb-2 text-[#0EA5E9]">
                 Branch Network
               </h4>
               <p className="text-gray-500 leading-relaxed text-sm">

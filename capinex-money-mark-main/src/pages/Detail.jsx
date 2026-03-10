@@ -174,10 +174,11 @@ export default function Detail() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         {/* Meta Tags for SEO */}
-        <title>{`${loanData.subtitle}-${loanData.type}`}</title>
+        <title>{loanData?.seoTitle || `${loanData.subtitle}-${loanData.type}`}</title>
         <meta
           name="description"
           content={
+            loanData?.metaDescription ||
             loanData.description ||
             "Find out more about various loan options and apply today."
           }
@@ -368,7 +369,7 @@ export default function Detail() {
             />
 
             <p className="text-xs text-gray-400 mb-4">
-              Don't worry, this will not affect your credit score.
+              {loanData?.offerNote || "Don't worry, this will not affect your credit score."}
             </p>
 
             <div className="w-full h-3 bg-gray-700 rounded mb-2 animate-pulse"></div>
@@ -388,10 +389,10 @@ export default function Detail() {
       <EligibilityCheckForm loanData={loanData} />
 
       {/* Section Two */}
-      <section className="flex relative flex-col justify-center items-center mx-auto my-0 max-w-none h-[187px] w-[864px] max-md:px-5 max-md:py-0 max-md:w-full max-md:max-w-[991px] max-sm:px-4 max-sm:py-0 max-sm:max-w-screen-sm bg-[#0a1628]">
-        <div className="flex justify-center items-center h-22">
-          <h1 className="text-2xl font-bold relative">
-            <span className="bg-cyan-400 px-1 absolute inset-0 w-[140px] -left-9 h-3 top-4 z-0 rounded-sm" />
+      <section className="flex relative flex-col justify-center items-center mx-auto my-0 max-w-none min-h-[187px] w-full max-w-[864px] max-md:px-5 max-md:py-8 max-md:w-full max-md:max-w-[991px] max-sm:px-4 max-sm:py-8 max-sm:max-w-screen-sm py-10 bg-[#0a1628]">
+        <div className="flex justify-center items-center h-16 mt-4">
+          <h1 className="text-2xl font-bold relative inline-block">
+            <span className="bg-cyan-400 px-1 absolute inset-0 w-full -left-1 h-3 top-4 z-0 rounded-sm opacity-80" />
             <span className="relative z-10 text-white">Why ?</span>
           </h1>
         </div>
@@ -433,7 +434,7 @@ export default function Detail() {
 
           {/* Right Section - Image + Icon */}
           <div className="flex-1 relative w-full max-w-md md:max-w-sm sm:max-w-xs sm:px-4">
-            <div className="card-icon-for-family absolute top-10 -left-6 z-10 bg-yellow-300 w-12 h-12 rounded-full flex items-center justify-center shadow-lg md:w-10 md:h-10 sm:w-8 sm:h-8 sm:top-6 sm:-left-4">
+            <div className="card-icon-for-family absolute top-10 -left-6 z-10 bg-[#0EA5E9] w-12 h-12 rounded-full flex items-center justify-center shadow-lg md:w-10 md:h-10 sm:w-8 sm:h-8 sm:top-6 sm:-left-4">
               <img
                 src={CardIcon}
                 alt="Card Icon"
@@ -598,17 +599,17 @@ export default function Detail() {
 
       {/* section four */}
 
-      <section className="flex relative flex-col justify-center items-center mx-auto my-0 max-w-none h-[187px] w-[864px] max-md:px-5 max-md:py-0 max-md:w-full max-md:max-w-[991px] max-sm:px-4 max-sm:py-0 max-sm:max-w-screen-sm mt-4 bg-[#0a1628]">
-        <div className="flex justify-center items-center">
-          <h1 className="text-2xl font-bold relative">
-            <span className="bg-cyan-400 px-1 absolute inset-0 w-[175px] -left-4 h-3 top-4 z-0 rounded-sm" />
+      <section className="flex relative flex-col justify-center items-center mx-auto my-0 max-w-none min-h-[187px] w-full max-w-[864px] max-md:px-5 max-md:py-8 max-md:w-full max-md:max-w-[991px] max-sm:px-4 max-sm:py-8 max-sm:max-w-screen-sm mt-4 py-10 bg-[#0a1628]">
+        <div className="flex justify-center items-center mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold relative inline-block">
+            <span className="bg-cyan-400 px-1 absolute inset-0 w-full -left-2 h-4 top-6 z-0 rounded-sm opacity-50" />
             <span className="relative z-10 text-white">How it works</span>
-          </h1>
+          </h2>
         </div>
 
-        <h1 className="text-3xl sm:text-4xl md:text-4xl 2xl:text-6xl font-bold text-center leading-tight bg-gradient-to-r from-cyan-400 via-cyan-300 to-cyan-500 bg-clip-text text-transparent mb-8">
+        <p className="text-lg sm:text-xl text-center text-gray-300 max-w-3xl leading-relaxed mb-4 px-4">
           {loanData.howItWorksNote}
-        </h1>
+        </p>
       </section>
 
       <section className="bg-[#1a202c] py-0 px-6 md:px-16">

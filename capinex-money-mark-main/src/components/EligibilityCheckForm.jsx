@@ -227,8 +227,7 @@ const EligibilityCheckForm = ({ loanData }) => {
                   Check Your Eligibility
                 </h2>
                 <p className="text-gray-300">
-                  Fill in your details and get instant pre-approval for your{" "}
-                  {loanData?.type || "loan"}
+                  {loanData?.eligibilityCheckNote || `Fill in your details and get instant pre-approval for your ${loanData?.type || "loan"}`}
                 </p>
               </div>
 

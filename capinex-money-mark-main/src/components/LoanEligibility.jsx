@@ -44,8 +44,7 @@ const tips =
             {loanData?.type} Requirements
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Everything you need to know about eligibility criteria and required documents 
-            for your {loanData?.type} application.
+            {loanData?.eligibilityRequirementsNote || `Everything you need to know about eligibility criteria and required documents for your ${loanData?.type || "loan"} application.`}
           </p>
         </div>
 

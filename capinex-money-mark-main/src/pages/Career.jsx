@@ -13,12 +13,12 @@ const Careers = () => {
   return (
     <>
     <Helmet>
-  <title>Careers at Capinex | Join Our Growing Fintech Team</title>
+  <title>Fintech Jobs at Capinex: Apply for Careers Now</title>
   <meta charSet="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta
     name="description"
-    content="Explore career opportunities at Capinex. Be part of an innovative finance company shaping the future of digital lending in India. Apply now!"
+    content="Capinex offers career opportunities in fintech and digital lending. Be part of a purpose-driven team. Apply today and grow with us!"
   />
   <meta
     name="keywords"
@@ -37,9 +37,7 @@ const Careers = () => {
               Join Us in Transforming Financial Services
             </h1>
             <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-              At Capinex, we're on a mission to revolutionize the way financial
-              services are delivered in India. Join our team of passionate
-              innovators making a difference.
+              At Capinex, we're on a mission to revolutionize financial services and digital lending in India. Join our fintech team of passionate innovators making a difference.
             </p>
           </div>
         </div>
@@ -48,34 +46,34 @@ const Careers = () => {
         <div className="relative z-10 -mt-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-[#1a202c] rounded-xl shadow-lg p-6 transform hover:-translate-y-1 transition-all duration-300 border border-gray-700">
-              <div className="flex items-center space-x-4">
-                <div className="bg-blue-100 p-3 rounded-lg">
-                  <Users className="text-blue-900 w-6 h-6" />
+              <div className="flex items-center space-x-6">
+                <div className="bg-blue-100 p-4 rounded-xl">
+                  <Users className="text-blue-900 w-8 h-8" />
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-cyan-400">200+</div>
+                  <div className="text-3xl font-bold text-cyan-400 mb-1">200+</div>
                   <div className="text-gray-300">Team Members</div>
                 </div>
               </div>
             </div>
             <div className="bg-[#1a202c] rounded-xl shadow-lg p-6 transform hover:-translate-y-1 transition-all duration-300 border border-gray-700">
-              <div className="flex items-center space-x-4">
-                <div className="bg-blue-100 p-3 rounded-lg">
-                  <Target className="text-blue-900 w-6 h-6" />
+              <div className="flex items-center space-x-6">
+                <div className="bg-blue-100 p-4 rounded-xl">
+                  <Target className="text-blue-900 w-8 h-8" />
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-cyan-400">5+</div>
+                  <div className="text-3xl font-bold text-cyan-400 mb-1">5+</div>
                   <div className="text-gray-300">Office Locations</div>
                 </div>
               </div>
             </div>
             <div className="bg-[#1a202c] rounded-xl shadow-lg p-6 transform hover:-translate-y-1 transition-all duration-300 border border-gray-700">
-              <div className="flex items-center space-x-4">
-                <div className="bg-blue-100 p-3 rounded-lg">
-                  <Briefcase className="text-blue-900 w-6 h-6" />
+              <div className="flex items-center space-x-6">
+                <div className="bg-blue-100 p-4 rounded-xl">
+                  <Briefcase className="text-blue-900 w-8 h-8" />
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-cyan-400">50+</div>
+                  <div className="text-3xl font-bold text-cyan-400 mb-1">50+</div>
                   <div className="text-gray-300">Open Positions</div>
                 </div>
               </div>
@@ -91,12 +89,11 @@ const Careers = () => {
                 Why Work with Us?
               </h2>
               <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-                Join a team that values innovation, growth, and making a real
-                impact in the financial industry.
+                Join Capinex careers for fintech jobs that value innovation, growth, and making a real impact in digital lending and finance.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
               <div className="bg-[#0a1628] p-6 rounded-xl border border-gray-700 hover:shadow-lg transition-all duration-300">
                 <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                   <Users className="text-blue-900 w-6 h-6" />
@@ -161,9 +158,7 @@ const Careers = () => {
                   Who We're Looking For
                 </h2>
                 <p className="text-lg text-gray-300 mb-8">
-                  Are you passionate about making a difference in the finance
-                  industry? Do you have a drive to innovate, learn, and grow?
-                  Then Capinex is the right place for you.
+                  Are you passionate about fintech jobs and digital lending careers? Do you want to join Capinex careers and innovate in finance? Then Capinex is the right place for you.
                 </p>
                 <ul className="space-y-4">
                   {[

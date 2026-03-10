@@ -135,8 +135,8 @@ const AdminLayout = ({ children }) => {
             </div>
 
             {/* Testimonials */}
-            <div className="bg-yellow-100 rounded-md shadow-md p-5 space-y-3">
-              <div className="w-12 h-12 bg-yellow-500 text-white rounded-full flex justify-center items-center">
+            <div className="bg-sky-100 rounded-md shadow-md p-5 space-y-3">
+              <div className="w-12 h-12 bg-[#0EA5E9] text-white rounded-full flex justify-center items-center">
                 <BsPeople className="text-xl" />
               </div>
               <div className="text-3xl font-bold">{testimonialsCount}</div>

@@ -116,7 +116,7 @@ const BlogPost = () => {
                 <ArrowLeft size={20} className="mr-2" />
                 Back to Blog
               </button>
-              {/* <span className="inline-block bg-yellow-500 text-blue-900 text-sm font-semibold px-4 py-1 rounded-full uppercase tracking-wide mb-4">
+              {/* <span className="inline-block bg-[#0EA5E9] text-white text-sm font-semibold px-4 py-1 rounded-full uppercase tracking-wide mb-4">
                 {post.category}
               </span> */}
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">

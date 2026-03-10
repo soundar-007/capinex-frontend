@@ -14,6 +14,7 @@ import { CheckCircle, ThumbsUp, Scale, Users } from "lucide-react";
 import { useInView } from "react-intersection-observer";
 import { useNavigate } from "react-router-dom";
 import aboutbg from "../assets/about/aboutbg.webp";
+import { Helmet } from "react-helmet";
 
 const AboutPage = () => {
   const navigate = useNavigate();
@@ -225,6 +226,13 @@ const AboutPage = () => {
   };
   return (
     <div className="min-h-screen bg-[#0a1628]">
+      <Helmet>
+        <title>Capinex Money Mark: Fast & Transparent Financial Services</title>
+        <meta
+          name="description"
+          content="Capinex MoneyMark Finance Pvt Ltd combines expertise and technology to offer inclusive financial products. Experience seamless service now!"
+        />
+      </Helmet>
       <section className="pt-32 pb-20 relative overflow-hidden bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900">
         {/* Background Image */}
         <div
@@ -241,7 +249,7 @@ const AboutPage = () => {
         {/* Background decorative elements */}
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
-          <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-yellow-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
+          <div className="absolute top-1/3 right-1/4 w-80 h-80 bg-sky-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
           <div className="absolute bottom-1/4 right-1/3 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"></div>
         </div>
 
@@ -255,7 +263,7 @@ const AboutPage = () => {
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               Take the Next Step in Your{" "}
               <motion.span
-                className="text-yellow-400"
+                className="text-[#0EA5E9]"
                 animate={{
                   scale: [1, 1.05, 1],
                   opacity: [1, 0.8, 1],
@@ -275,10 +283,7 @@ const AboutPage = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
             >
-              Capinex MoneyMark Finance Private Limited. Ltd. is one of India's
-              fastest-growing financial distribution platforms. Officially
-              registered in May 2023, we combine over 20 years of leadership
-              expertise in lending, customer service, and financial consulting.
+              Capinex MoneyMark Finance Private Limited is one of India's fastest-growing financial distribution platforms, officially registered in May 2023. With over 20 years of expertise in lending, customer service, and financial consulting, we provide quick approvals and transparent financial solutions tailored to your needs.
             </motion.p>
             <motion.p
               className="max-w-2xl mx-auto text-blue-100 mb-12"
@@ -299,7 +304,7 @@ const AboutPage = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-yellow-500 hover:bg-yellow-600 text-blue-900 font-semibold px-8 py-3 rounded-lg shadow-lg cursor-pointer"
+                className="bg-[#0EA5E9] hover:bg-sky-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg cursor-pointer"
                 onClick={() => navigate("/loans/personal-loan")}
               >
                 Discover Our Services
@@ -350,8 +355,7 @@ const AboutPage = () => {
               variants={itemVariants}
               className="max-w-3xl mx-auto text-lg text-gray-300"
             >
-              Driven by purpose and guided by strong principles, we strive to
-              create a more inclusive financial landscape.
+              Driven by purpose and strong principles, Capinex MoneyMark aims to create an inclusive financial landscape in India, promoting financial inclusion and accessible lending solutions for all communities.
             </motion.p>
           </motion.div>
 
@@ -427,19 +431,19 @@ const AboutPage = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="flex flex-wrap justify-center gap-6">
             {values.map((value, index) => (
               <div
                 key={index}
-                className={`bg-gradient-to-br ${value.color} p-6 rounded-xl shadow-lg text-white animate-on-scroll opacity-0 translate-y-10 transition-all duration-700`}
+                className={`bg-gradient-to-br ${value.color} p-6 rounded-xl shadow-lg text-white animate-on-scroll opacity-0 translate-y-10 transition-all duration-700 w-full sm:w-[calc(50%-1.5rem)] lg:w-[calc(25%-1.5rem)]`}
                 style={{ transitionDelay: `${200 + index * 100}ms` }}
               >
-                <div className="flex flex-col items-center text-center">
-                  <div className="w-16 h-16 flex items-center justify-center mb-4">
+                <div className="flex flex-col items-center text-center h-full">
+                  <div className="w-16 h-16 flex items-center justify-center mb-4 flex-shrink-0">
                     {value.icon}
                   </div>
                   <h3 className="text-2xl font-bold mb-1">
-                    <span className="text-yellow-300">{value.letter}</span> -{" "}
+                    <span className="text-[#0EA5E9]">{value.letter}</span> -{" "}
                     {value.name}
                   </h3>
                 </div>
@@ -465,7 +469,7 @@ const AboutPage = () => {
           <div className="relative">
             {/* Decorative elements */}
             <div className="absolute -top-10 -left-10 w-40 h-40 bg-blue-100 rounded-full opacity-40"></div>
-            <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-yellow-100 rounded-full opacity-40"></div>
+            <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-sky-100 rounded-full opacity-40"></div>
 
             {/* Content */}
             <div className="relative bg-[#0a1628] border border-gray-700 rounded-3xl shadow-xl overflow-hidden">
@@ -517,11 +521,11 @@ const AboutPage = () => {
               {founders.map((person, index) => (
                 <div
                   key={index}
-                  className="animate-on-scroll opacity-0 translate-y-10 transition-all duration-700 bg-[#0a1628] border border-gray-700 rounded-xl shadow-lg overflow-hidden transform hover:shadow-xl transition-shadow"
+                  className="animate-on-scroll opacity-0 translate-y-10 transition-all duration-700 bg-[#0a1628] border border-gray-700 rounded-xl shadow-lg overflow-hidden transform hover:shadow-xl transition-shadow flex flex-col h-full"
                   style={{ transitionDelay: `${200 + index * 100}ms` }}
                 >
-                  <div className="bg-gradient-to-r from-blue-700 to-blue-900 h-3"></div>
-                  <div className="p-6">
+                  <div className="bg-gradient-to-r from-blue-700 to-blue-900 h-3 flex-shrink-0"></div>
+                  <div className="p-6 flex flex-col flex-grow">
                     <div className="w-20 h-20 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4">
                       <span className="text-blue-800 text-3xl font-bold">
                         {person.name.split(" ")[0][0]}
@@ -554,11 +558,11 @@ const AboutPage = () => {
               {leaders.map((person, index) => (
                 <div
                   key={index}
-                  className="animate-on-scroll opacity-0 translate-y-10 transition-all duration-700 bg-[#0a1628] border border-gray-700 rounded-xl shadow-lg overflow-hidden transform hover:shadow-xl transition-shadow"
+                  className="animate-on-scroll opacity-0 translate-y-10 transition-all duration-700 bg-[#0a1628] border border-gray-700 rounded-xl shadow-lg overflow-hidden transform hover:shadow-xl transition-shadow flex flex-col h-full"
                   style={{ transitionDelay: `${400 + index * 100}ms` }}
                 >
-                  <div className="bg-gradient-to-r from-blue-600 to-blue-800 h-3"></div>
-                  <div className="p-6">
+                  <div className="bg-gradient-to-r from-blue-600 to-blue-800 h-3 flex-shrink-0"></div>
+                  <div className="p-6 flex flex-col flex-grow">
                     <div className="w-16 h-16 rounded-full bg-blue-100 flex items-center justify-center mx-auto mb-4">
                       <span className="text-blue-800 text-2xl font-bold">
                         {person.name.split(" ")[1][0]}

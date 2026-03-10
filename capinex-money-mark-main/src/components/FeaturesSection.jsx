@@ -59,8 +59,7 @@ const PersonalLoanFeatures = ({loanData}) => {
             {loanData?.type} Features
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Unlock your financial potential with our comprehensive {loanData?.type} solutions. 
-            Designed for your convenience, built for your success.
+            {loanData?.featuresNote || `Unlock your financial potential with our comprehensive ${loanData?.type || "loan"} solutions. Designed for your convenience, built for your success.`}
           </p>
         </div>
 

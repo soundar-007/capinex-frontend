@@ -93,7 +93,10 @@ const loanData = {
     emailPlaceholder: "Your Email Address",
     buttonText: "View Offers",
     impactNote: "No impact on your credit score when you check your rate!",
-    why: "Quick, easy funds when you need them most. Perfect for emergencies, dreams, and more.",
+    why: "Quick, easy personal loans with low-interest rates and flexible EMI options. Perfect for emergencies, celebrations, debt consolidation, and more.",
+    eligibilityCheckNote: "Fill in your details to check personal loan eligibility and get instant pre-approval with our EMI calculator for easy repayment planning.",
+    seoTitle: "Instant Personal Loan - Apply Online & Get Funds",
+    metaDescription: "Get instant personal loan offers tailored to you. Calculate EMI, check eligibility, and enjoy low interest rates with quick approval and disbursal.",
     reasons: [
       {
         title: "No Collateral Required",
@@ -148,12 +151,12 @@ const loanData = {
       },
     ],
     images: [personalWhy, personalHow, personalEle],
-    howItWorksNote: "Your journey to the perfect loan starts here",
+    howItWorksNote: "Your journey to the perfect personal loan starts here. Use our EMI calculator to plan your monthly payments and get quick approval.",
     howItWorksSteps: [
       {
         title: "Get Personalized Offers",
         description:
-          "Enter basic details to instantly view the best loan options tailored to your profile.",
+          "Enter basic details to instantly view personalized personal loan offers with competitive interest rates and EMI options tailored to you.",
       },
       {
         title: "Complete KYC & Upload Documents",
@@ -236,6 +239,11 @@ const loanData = {
     buttonText: "View Offers",
     impactNote: "No impact on your credit score when you check your rate!",
     why: "Fuel your business ambitions with quick, flexible funding. Perfect for growth, expansion, or managing working capital.",
+    why: "Fuel your small business ambitions with quick, flexible business loans. Ideal for growth, expansion, and managing working capital for small businesses.",
+    eligibilityCheckNote: "Fill in your details and get instant pre-approval for your small business loan with competitive interest rates and flexible repayment options.",
+    featuresNote: "Unlock your financial potential with our comprehensive small business loan solutions. Designed for startups and MSMEs with flexible terms and competitive rates.",
+    seoTitle: "Top Small Business Loan Lenders Online",
+    metaDescription: "Fast and flexible small business loans available online. Get pre-approved instantly and fund your business growth today.",
     images: [businessWhy, businessHow, businessEle],
     faq: [
       {
@@ -499,8 +507,8 @@ const loanData = {
         title: "Home Improvement Loan",
         description:
           "Renovate, upgrade, or repair your home with a loan tailored to your project.",
-        color: "from-yellow-500 to-amber-500",
-        bgColor: "from-yellow-50 to-amber-50",
+        color: "from-[#0EA5E9] to-[#002060]",
+        bgColor: "from-sky-50 to-sky-100",
       },
       {
         icon: Expand,
@@ -591,7 +599,7 @@ const loanData = {
         icon: Landmark,
         title: "Property Documents",
         items: ["Sale deed", "Title document", "NOC from Builder/Society"],
-        color: "from-yellow-500 to-amber-500",
+        color: "from-[#0EA5E9] to-[#002060]",
       },
       {
         icon: Image,
@@ -706,6 +714,7 @@ const loanData = {
         answer: "Within 24–48 hours, subject to documentation and eligibility.",
       },
     ],
+    featuresNote: "Unlock your financial potential with our comprehensive Car Loan solutions. Designed for your convenience, built for your success.",
     reasons: [
       {
         title: "100% On-Road Funding",
@@ -761,6 +770,7 @@ const loanData = {
         bgColor: "from-pink-50 to-rose-50",
       },
     ],
+    featuresNote: "Unlock your financial potential with our comprehensive Loan Against Property solutions. Designed for your convenience, built for your success.",
     eligibilityNote: "Simple steps. Instant checks. Easy access.",
     eligibility: [
       {
@@ -999,7 +1009,7 @@ const loanData = {
         icon: ClipboardList,
         title: "Loan Details",
         items: ["Existing loan documents (if any)"],
-        color: "from-yellow-500 to-amber-500",
+        color: "from-[#0EA5E9] to-[#002060]",
       },
     ],
     howItWorksNote: "Your journey to unlocking property value begins here",
@@ -1080,7 +1090,9 @@ const loanData = {
     emailPlaceholder: "Your Email Address",
     buttonText: "View Offers",
     impactNote: "No impact on your credit score when you check your rate!",
-    why: "Leverage your owned property for personal or business needs.",
+    why: "Leverage your owned property for personal or business needs with competitive loan against property interest rates and flexible repayment options.",
+    seoTitle: "Get Loan Against Property with Competitive Interest Rates",
+    metaDescription: "Apply for Loan Against Property with top banks and NBFCs. Benefit from low interest rates, quick disbursal, and flexible EMIs. Check eligibility now!",
     images: [lapWhy, lapHow, lapEle],
     faq: [
       {
@@ -1159,7 +1171,7 @@ const loanData = {
         icon: ClipboardList,
         title: "Loan Details",
         items: ["Existing loan details (if applicable)"],
-        color: "from-yellow-500 to-amber-500",
+        color: "from-[#0EA5E9] to-[#002060]",
       },
       {
         icon: UploadCloud,
@@ -1249,7 +1261,11 @@ const loanData = {
     emailPlaceholder: "Your Email Address",
     buttonText: "View Offers",
     impactNote: "No impact on your credit score when you check your rate!",
-    why: "Reduce EMIs by switching to lower interest.",
+    why: "Reduce EMIs by switching to lower interest rates with personal loan balance transfer options from top lenders like HDFC, ICICI, and Axis Bank.",
+    howItWorksNote: "A smooth switch to better savings with personal loan balance transfer. Transfer your personal loan from one bank to another easily and save on interest rates.",
+    featuresNote: "Unlock your financial potential with our comprehensive personal loan balance transfer solutions. Features include low interest rates, zero foreclosure charges, and transfer from any lender including HDFC and ICICI.",
+    seoTitle: "Transfer Personal Loan & Reduce Your EMIs Today",
+    metaDescription: "Get the best personal loan balance transfer deals with Capinex. Reduce your EMIs and enjoy a 100% digital process today.",
     images: [transferWhy, transferHow, personalEle],
     faq: [
       {
@@ -1337,7 +1353,7 @@ const loanData = {
         icon: ClipboardList,
         title: "Previous Loan Docs",
         items: ["Sanction Letter", "EMI Repayment Statement"],
-        color: "from-yellow-500 to-amber-500",
+        color: "from-[#0EA5E9] to-[#002060]",
       },
       {
         icon: FileText,
@@ -1430,7 +1446,10 @@ const loanData = {
     emailPlaceholder: "Your Email Address",
     buttonText: "View Offers",
     impactNote: "No impact on your credit score when you check your rate!",
-    why: "Finance real estate or infrastructure projects confidently.",
+    why: "Finance real estate, infrastructure, and construction projects confidently with our tailored project loans for builders and developers.",
+    seoTitle: "Flexible Project Loans for Builders & Developers",
+    metaDescription: "Apply for project loans in India with minimal documentation and fast disbursal. Tailored for builders and developers. Check your eligibility!",
+    offerNote: "Check project loan offers online without affecting your credit score. Get instant eligibility results for project loans and construction financing.",
     images: [projectWhy, projectHow, projectEle],
     faq: [
       {
@@ -1474,8 +1493,8 @@ const loanData = {
         title: "Manufacturing Plants & Factories",
         description:
           "Funding for setting up or expanding industrial and production facilities.",
-        color: "from-yellow-500 to-amber-500",
-        bgColor: "from-yellow-50 to-amber-50",
+        color: "from-[#0EA5E9] to-[#002060]",
+        bgColor: "from-sky-50 to-sky-100",
       },
       {
         icon: Building2,
@@ -1579,7 +1598,7 @@ const loanData = {
         icon: Receipt,
         title: "Banking & Loans",
         items: ["Bank Statements", "Existing Loan Details"],
-        color: "from-yellow-500 to-amber-500",
+        color: "from-[#0EA5E9] to-[#002060]",
       },
       {
         icon: ClipboardList,
@@ -1660,7 +1679,11 @@ const loanData = {
     emailPlaceholder: "Your Email Address",
     buttonText: "View Offers",
     impactNote: "No impact on your credit score when you check your rate!",
-    why: "Empower your business with fast, flexible funding.",
+    why: "Empower your business with fast, flexible MSME loans and collateral-free funding tailored for startups and small businesses.",
+    eligibilityCheckNote: "Complete MSME loan requirements including eligibility criteria, documents needed, and how to apply for collateral-free MSME loans.",
+    seoTitle: "Instant MSME Loan Approval - No Collateral Needed",
+    metaDescription: "MSME loans made easy: quick online application, no collateral, and flexible EMIs. Get the best rates and instant approval now!",
+    howItWorksNote: "Quick and easy MSME loan process with instant eligibility check, no collateral, and fast approval for your business needs.",
     images: [msmeWhy, msmeHow, msmeEle],
     faq: [
       {
@@ -1804,7 +1827,7 @@ const loanData = {
         icon: ScrollText,
         title: "Business Plan",
         items: ["Brief business overview (if applicable)"],
-        color: "from-yellow-500 to-amber-500",
+        color: "from-[#0EA5E9] to-[#002060]",
       },
     ],
     howItWorksNote: "Quick and easy business loan process.",
@@ -1842,7 +1865,11 @@ const loanData = {
     emailPlaceholder: "Your Email Address",
     buttonText: "View Offers",
     impactNote: "No impact on your credit score when you check your rate!",
-    why: "Switch your existing home loan for better savings.",
+    why: "Switch your existing home loan to another bank for better savings with balance transfer home loan options, lower interest rates, and reduced EMIs.",
+    howItWorksNote: "A simple, quick home loan transfer process to another bank with easy balance transfer and top-up loan options for better interest rates and savings.",
+    featuresNote: "Unlock your financial potential with our comprehensive Home Loan Transfer solutions including balance transfer home loan, top-up loans, and flexible tenure options for maximum savings.",
+    seoTitle: "Home Loan Transfer: Save with Low Interest Rates & Easy Process",
+    metaDescription: "Save big by transferring your home loan balance to a better lender. Check eligibility, compare rates, and apply online hassle-free now.",
     images: [hometWhy, hometHow, hometEle],
     faq: [
       {
@@ -1862,10 +1889,10 @@ const loanData = {
       },
       {
         question: "Can I get a top-up loan with the balance transfer?",
-        answer:
-          "Yes! Based on your eligibility, you can get a top-up loan without additional paperwork.",
+        answer: "No, a balance transfer only moves your existing loan. If you need extra funds securely, ask for a top-up loan.",
       },
     ],
+    featuresNote: "Unlock your financial potential with our comprehensive personal loan balance transfer solutions. Features include low interest rates, zero foreclosure charges, and transfer from any lender including HDFC and ICICI.",
     reasons: [
       {
         title: "Lowest Transfer Rates",
@@ -1912,7 +1939,7 @@ const loanData = {
         icon: ClipboardList,
         title: "Existing Loan Details",
         items: ["Sanction Letter", "Repayment Track Record"],
-        color: "from-yellow-500 to-amber-500",
+        color: "from-[#0EA5E9] to-[#002060]",
       },
       {
         icon: Landmark,
@@ -2004,7 +2031,10 @@ const loanData = {
     emailPlaceholder: "Your Email Address",
     buttonText: "View Offers",
     impactNote: "No impact on your credit score when you check your rate!",
-    why: "Get instant cash for your gold—without selling it.",
+    why: "Get instant cash for your gold with low interest rates—without selling it. Trusted gold loan providers like Muthoot Finance and IIFL offer quick approval and disbursal.",
+    seoTitle: "Instant Gold Loan - Low Interest & Fast Disbursal",
+    metaDescription: "Apply for gold loan online with Capinex. Enjoy lowest interest rates, instant cash, and flexible repayment options. Secure your loan today!",
+    featuresNote: "Unlock your financial potential with our comprehensive Gold Loan solutions. Get competitive gold loan interest rates from top lenders like Muthoot Finance, SBI, and IIFL. Designed for your convenience, built for your success.",
     images: [goldWhy, goldHow, goldEle],
     faq: [
       {
@@ -2106,7 +2136,7 @@ const loanData = {
         color: "from-gray-500 to-slate-500",
       },
     ],
-    howItWorksNote: "Easy, fast access to funds through your gold.",
+    howItWorksNote: "Easy, fast access to funds through your gold with competitive gold loan interest rates from SBI, Muthoot Finance, and IIFL. Quick approval and secure process guaranteed.",
     howItWorksSteps: [
       {
         title: "Walk-In or Apply Online",

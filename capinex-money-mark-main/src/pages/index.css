@@ -35,17 +35,17 @@
   }
   
   .custom-scrollbar::-webkit-scrollbar-track {
-    background: #1a202c;
+    background: #002060;
     border-radius: 10px;
   }
   
   .custom-scrollbar::-webkit-scrollbar-thumb {
-    background: #4fd1c5;
+    background: #0EA5E9;
     border-radius: 10px;
   }
   
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #38b2ac;
+    background: #0284C7;
   }
   
 
@@ -237,7 +237,7 @@ border:5px inset rgb(140, 137, 52);
     flex-wrap: wrap;
     padding: 40px;
     min-height: 100vh;
-    background: #0a1628;
+    background: #002060;
 }
 
 .card {
@@ -275,13 +275,13 @@ border:5px inset rgb(140, 137, 52);
 }
 
 .card1 {
-    background: linear-gradient(to bottom, #4fd1c5, #1a202c) !important;
+    background: linear-gradient(to bottom, #0EA5E9, #002060) !important;
 }
 .card2 {
-    background: linear-gradient(to bottom, #4fd1c5, #1a202c) !important;
+    background: linear-gradient(to bottom, #0EA5E9, #002060) !important;
 }
 .card3 {
-    background: linear-gradient(to bottom, #4fd1c5, #1a202c) !important;
+    background: linear-gradient(to bottom, #0EA5E9, #002060) !important;
 }
 
 /* .card2 {

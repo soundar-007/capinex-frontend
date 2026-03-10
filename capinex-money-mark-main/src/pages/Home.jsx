@@ -204,9 +204,9 @@ const Home = () => {
     },
     {
       title: "Car Loan",
-      bg: "bg-amber-200",
-      labelBg: "bg-amber-300",
-      textColor: "text-slate-900",
+      bg: "bg-[#0EA5E9]",
+      labelBg: "bg-sky-600",
+      textColor: "text-white",
       img:loan2,
       // img: "https://cdn.builder.io/api/v1/image/assets/TEMP/e22e370f5d0950279de2bdf6cf30b022c79ee1dc?placeholderIfAbsent=true&apiKey=3415081ac2e344e696e4934521b1deb4",
       arrow:
@@ -217,9 +217,9 @@ const Home = () => {
     },
     {
       title: "Home Discount",
-      bg: "bg-red-400",
-      labelBg: "bg-red-500",
-      textColor: "text-slate-900",
+      bg: "bg-[#002060]",
+      labelBg: "bg-sky-800",
+      textColor: "text-white",
       img:loan3,
       // img: "https://cdn.builder.io/api/v1/image/assets/TEMP/5ab0c46bfcf7a329d301c9805280023a39f607d1?placeholderIfAbsent=true&apiKey=3415081ac2e344e696e4934521b1deb4",
       arrow:
@@ -731,7 +731,7 @@ const points = [
                     <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gray-600 transform -translate-y-1/2 rounded-full"></div>
 
                     <div
-                      className="absolute top-1/2 left-0 h-0.5 bg-gradient-to-r from-yellow-500 to-orange-500 transform -translate-y-1/2 rounded-full transition-all duration-1000 ease-out"
+                      className="absolute top-1/2 left-0 h-0.5 bg-gradient-to-r from-sky-400 to-sky-600 transform -translate-y-1/2 rounded-full transition-all duration-1000 ease-out"
                       style={{
                         width: `${((activeStep + 1) / steps.length) * 100}%`,
                       }}
@@ -755,7 +755,7 @@ const points = [
                             )}
 
                             {activeStep === index && (
-                              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-yellow-500/30 to-orange-500/30 animate-ping"></div>
+                              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-sky-400/30 to-sky-600/30 animate-ping"></div>
                             )}
                           </button>
 
@@ -763,7 +763,7 @@ const points = [
                             <div
                               className={` font-medium text-xs transition-all duration-300 ${
                                 activeStep === index
-                                  ? "text-yellow-400 scale-105"
+                                  ? "text-sky-400 scale-105"
                                   : "text-blue-200"
                               }`}
                             >
@@ -807,7 +807,7 @@ const points = [
           <div className="w-full lg:w-6/12">
             <div className="text-white max-w-xl mx-auto">
               <div className="inline-block mb-6">
-                <h2 className="relative z-10 text-sm font-bold tracking-widest uppercase text-slate-900 bg-cyan-400 px-2 py-1 rounded-sm">
+                <h2 className="relative z-10 text-sm font-bold tracking-widest uppercase text-[#002060] bg-[#0EA5E9] px-2 py-1 rounded-sm">
                   Key Features
                 </h2>
               </div>
@@ -820,7 +820,7 @@ const points = [
                 Compare, check, and secure loans instantly with the best rates.
               </div>
 
-              <div className="mt-12 bg-[#1a202c] rounded-2xl p-8 lg:p-10 border border-gray-700">
+              <div className="mt-12 bg-[#002060] rounded-2xl p-8 lg:p-10 border border-gray-700">
                 {[
                   "Compare Loans effortlessly.",
                   "Check CIBIL Score instantly.",
@@ -833,7 +833,7 @@ const points = [
                     key={idx}
                     className="flex items-start gap-3 mt-4 first:mt-0"
                   >
-                    <div className="flex items-center justify-center bg-cyan-500 rounded-full w-5 h-5 shrink-0 mt-1">
+                    <div className="flex items-center justify-center bg-[#0EA5E9] text-[#002060] rounded-full w-5 h-5 shrink-0 mt-1">
                       <IoIosCheckmark size={18} />
                     </div>
                     <p className="text-lg font-semibold text-white">
@@ -889,7 +889,7 @@ const points = [
 
         
              <div className="inline-block mb-6">
-                <h2 className="relative z-10 text-sm font-bold tracking-widest uppercase text-slate-900 bg-cyan-400 px-2 py-1 rounded-sm">
+                <h2 className="relative z-10 text-sm font-bold tracking-widest uppercase text-[#002060] bg-[#0EA5E9] px-2 py-1 rounded-sm">
                    Award-Winning & Certified Company
                 </h2>
               </div>
@@ -904,10 +904,10 @@ const points = [
         </div>
 
         {/* Features List */}
-        <div className="mt-10 bg-[#1a202c] rounded-2xl p-8 lg:p-10 border border-gray-700">
+        <div className="mt-10 bg-[#002060] rounded-2xl p-8 lg:p-10 border border-gray-700">
           {["Trusted by 50K+ Customers", "ISO Certified Company", "Awarded Best FinTech 2024"].map((item, index) => (
             <div key={index} className="flex items-start gap-3 mt-4 first:mt-0">
-              <div className="flex items-center justify-center bg-cyan-500 rounded-full w-5 h-5 shrink-0 mt-1">
+              <div className="flex items-center justify-center bg-[#0EA5E9] text-[#002060] rounded-full w-5 h-5 shrink-0 mt-1">
                 <IoIosCheckmark size={18} />
               </div>
               <p className="text-lg font-semibold text-white">
@@ -921,7 +921,7 @@ const points = [
         <div className="mt-6">
          <Link
   to={"/about-us"}
-  className="inline-block px-6 py-3 bg-[#193CB8] hover:bg-[#102A80] text-white text-base font-semibold rounded-full transition duration-300"
+  className="inline-block px-6 py-3 bg-[#002060] hover:bg-[#0EA5E9] hover:text-[#002060] text-white text-base font-semibold rounded-full transition duration-300"
 >
   More Views
 </Link>
@@ -947,8 +947,8 @@ const points = [
 
       <div className=" flex justify-center items-center h-22">
         <h1 className="text-2xl font-bold relative">
-          <span className="bg-cyan-500 px-1 absolute inset-0 w-[210px] -left-8 h-3 top-4 z-0 rounded-sm" />
-          <span className="relative z-10 text-white">Our Services</span>
+          <span className="bg-[#0EA5E9] px-1 absolute inset-0 w-[210px] -left-8 h-3 top-4 z-0 rounded-sm" />
+          <span className="relative z-10 text-[#002060]">Our Services</span>
         </h1>
       </div>
 
@@ -983,7 +983,7 @@ const points = [
         <div className="flex justify-center items-center w-[90%] mx-auto mt-0 mb-3">
           <button
             onClick={() => setShowAll((prev) => !prev)}
-            className="cursor-pointer bg-cyan-500 hover:bg-cyan-600 text-white px-6 py-2 rounded-md transition"
+            className="cursor-pointer bg-[#002060] hover:bg-[#001540] text-white px-6 py-2 rounded-md transition"
           >
             {showAll ? "Show Less" : "Show More"}
           </button>
@@ -1089,7 +1089,7 @@ const points = [
 
 
  <motion.section
-      className="margin-container overflow-hidden px-6 sm:px-10 lg:px-20 py-5 sm:py-9 bg-amber-200 rounded-2xl max-w-[1440px] xl:max-w-[1600px] mx-auto mt-0 sm:mt-10"
+      className="margin-container overflow-hidden px-6 sm:px-10 lg:px-20 py-5 sm:py-9 bg-sky-100 rounded-2xl max-w-[1440px] xl:max-w-[1600px] mx-auto mt-0 sm:mt-10"
       initial="hidden"
       animate="visible"
       variants={containerVariants}
@@ -1110,8 +1110,8 @@ const points = [
                 className="flex gap-4 mt-6 text-base font-medium tracking-tight text-slate-900"
                 variants={itemVariants}
               >
-                <div className="flex bg-[#E6B350] rounded-full w-6 h-6 items-center justify-center shrink-0">
-                  <IoIosCheckmark size={20} />
+                <div className="flex bg-[#0EA5E9] rounded-full w-6 h-6 items-center justify-center shrink-0">
+                  <IoIosCheckmark size={20} className="text-white" />
                 </div>
                 <p className="flex-1">{point}</p>
               </motion.div>
@@ -1120,7 +1120,7 @@ const points = [
             <motion.div className="flex flex-col sm:flex-row gap-4 mt-8" variants={itemVariants}>
               <button
                 onClick={() => navigate("/loans/car-loan")}
-                className="px-6 py-4 bg-blue-800 text-white apply-button font-bold rounded-xl hover:bg-blue-900 transition"
+                className="px-6 py-4 bg-[#002060] text-white apply-button font-bold rounded-xl hover:bg-[#001f50] transition"
               >
                 Apply now
               </button>
@@ -1176,7 +1176,7 @@ const points = [
             <motion.div className="flex flex-col sm:flex-row gap-4 mt-8" variants={itemVariants}>
               <button
                 onClick={() => navigate("/loans/car-loan")}
-                className="px-6 py-4 bg-blue-800 text-white apply-button font-bold rounded-xl hover:bg-blue-900 transition"
+                className="px-6 py-4 bg-[#002060] text-white apply-button font-bold rounded-xl hover:bg-[#001f50] transition"
               >
                 Apply now
               </button>
@@ -1336,7 +1336,7 @@ const points = [
 
       {/* Section Blogs */}
       <div className="max-w-7xl mx-auto px-4 py-8">
-        <div className="w-full px-4 py-8 bg-[#1a202c] rounded-2xl flex flex-col md:flex-row gap-8">
+        <div className="w-full px-4 py-8 bg-[#002060] rounded-2xl flex flex-col md:flex-row gap-8">
           {/* Left Section */}
           <div className="flex flex-col items-center md:items-start text-center md:text-left w-full md:w-1/4">
             <h2 className="text-2xl font-semibold mb-2 text-white">Excellent</h2>
@@ -1366,7 +1366,7 @@ const points = [
               {/* Left Arrow */}
               <button
                 onClick={prevSlide}
-                className="absolute -left-2 p-2 rounded-full border border-gray-600 bg-[#0a1628] text-white z-10 shadow"
+                className="absolute -left-2 p-2 rounded-full border border-gray-600 bg-[#0EA5E9] text-[#002060] z-10 shadow"
               >
                 <FaChevronLeft />
               </button>
@@ -1476,7 +1476,7 @@ const points = [
               {/* Right Arrow */}
               <button
                 onClick={nextSlide}
-                className="absolute -right-2 p-2 rounded-full border border-gray-600 bg-[#0a1628] text-white z-10 shadow"
+                className="absolute -right-2 p-2 rounded-full border border-gray-600 bg-[#0EA5E9] text-[#002060] z-10 shadow"
               >
                 <FaChevronRight />
               </button>
@@ -1486,7 +1486,7 @@ const points = [
       </div>
       {/* Section six */}
 
-      <section className="flex flex-col bg-[#1a202c] rounded-3xl shadow-[3px_24px_53px_rgba(0,0,0,0.3)] mt-15">
+      <section className="flex flex-col bg-[#002060] rounded-3xl shadow-[3px_24px_53px_rgba(0,0,0,0.3)] mt-15">
         <div className="flex flex-col md:flex-row gap-5 justify-between self-center w-full max-w-[1132px] max-md:max-w-full">
           <header className="flex flex-col md:flex-row gap-10 md:gap-5 w-full">
             <h1 className="text-4xl font-bold leading-10 text-white w-full md:w-[260px] text-center md:text-left max-md:text-3xl">
@@ -1500,7 +1500,7 @@ const points = [
           </header>
           <button
             onClick={() => navigate("/contact-us")}
-            className="w-[10px] mx-auto apply-partnership-button cursor-pointer self-start px-2 py-5 mt-4 md:mt-1.5 text-base font-bold tracking-tight text-center text-white rounded-xl bg-sky-950 md:w-auto"
+            className="w-[10px] mx-auto apply-partnership-button cursor-pointer self-start px-2 py-5 mt-4 md:mt-1.5 text-base font-bold tracking-tight text-center text-[#002060] rounded-xl bg-[#0EA5E9] md:w-auto hover:bg-[#0284C7] transition"
           >
             Apply for Partnership
           </button>
@@ -1538,7 +1538,7 @@ const points = [
         />
       </svg>
 
-      <section className="flex flex-col justify-center items-center bg-orange-50 px-4 py-16 sm:px-8 md:px-12 lg:px-20 2xl:px-40 3xl:px-64 mt-0 w-full">
+      <section className="flex flex-col justify-center items-center bg-[#f0f9ff] px-4 py-16 sm:px-8 md:px-12 lg:px-20 2xl:px-40 3xl:px-64 mt-0 w-full">
         <div className="flex flex-col w-full max-w-screen-lg 2xl:max-w-screen-xl 3xl:max-w-[1800px]">
           <h1 className="font-for-heading text-center text-slate-900 font-semibold tracking-tighter leading-none text-xl sm:text-5xl lg:text-6xl 2xl:text-5xl">
             Explore our options
