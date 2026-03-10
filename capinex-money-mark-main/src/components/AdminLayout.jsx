@@ -4,7 +4,7 @@ import AdminSideMenu from "./AdminSideMenu";
 import { useMutation } from "@tanstack/react-query";
 import { Button, ConfigProvider, Input } from "antd";
 import { adminloginApi } from "../api/adminlogin";
-import logo from "../assets/logo.png";
+import logo from "../assets/logocapinex.png";
 import { useNavigate } from "react-router-dom";
 
 
@@ -72,8 +72,8 @@ const AdminLayout = ({children}) => {
           <div className="">
              <img
               src={logo}
-              width={12}
-              height={12}
+              width={120}
+              height={120}
               alt="logo"
               priority
             /> 

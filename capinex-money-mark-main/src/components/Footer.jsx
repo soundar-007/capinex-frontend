@@ -8,8 +8,7 @@ import {
   FaFacebookF,
 } from "react-icons/fa";
 import { Globe } from "lucide-react";
-import CompanyLogo from "../assets/logo.png";
-import CompanyLogo2 from "../assets/logo.png";
+import CompanyLogo2 from "../assets/logocapinex.png";
 
 export const Footer = () => {
   return (

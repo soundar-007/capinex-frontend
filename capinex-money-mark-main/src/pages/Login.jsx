@@ -4,6 +4,7 @@ import { useMutation } from "@tanstack/react-query";
 import { adminloginApi } from "../api/adminlogin";
 import { Button, ConfigProvider, Input } from "antd";
 import { useNavigate } from "react-router-dom";
+import logo from "../assets/logocapinex.png";
 
 const Login = ({ children }) => {
   const navigate = useNavigate();
@@ -57,7 +58,7 @@ const Login = ({ children }) => {
           <div className="h-16 lg:h-20 bg-whiteColour drop-shadow-lg sticky top-0 px-12 z-40 flex items-center bg-white">
             <div className="">
               <img
-                src="/images/primarylogo.png"
+                src={logo}
                 width={120}
                 height={120}
                 alt="logo"

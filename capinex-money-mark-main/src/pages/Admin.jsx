@@ -9,6 +9,7 @@ import { BsPeople } from "react-icons/bs";
 import { MdOutlineImage } from "react-icons/md";
 import { useNavigate } from "react-router-dom";
 import { getAllBlogsUserApi } from "../api/resource";
+import logo from "../assets/logocapinex.png";
 
 
 const AdminLayout = ({ children }) => {
@@ -72,7 +73,7 @@ const AdminLayout = ({ children }) => {
             <div>
               {/* Replace Image with img if not using Next.js */}
               <img
-                src="/images/primarylogo.png"
+                src={logo}
                 width={120}
                 height={120}
                 alt="logo"
