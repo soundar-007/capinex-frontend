@@ -32,11 +32,11 @@ const Careers = () => {
             <div className="absolute inset-0 bg-blue-900 opacity-90"></div>
             <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')] bg-cover bg-center"></div>
           </div>
-          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+          <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center  p-6 rounded-2xl">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#002060]">
               Join Us in Transforming Financial Services
             </h1>
-            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
+            <p className="text-xl text-[#002060] font-medium max-w-3xl mx-auto">
               At Capinex, we're on a mission to revolutionize financial services and digital lending in India. Join our fintech team of passionate innovators making a difference.
             </p>
           </div>

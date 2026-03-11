@@ -20,14 +20,14 @@ export const Footer = () => {
           <div className="flex items-center gap-3 mb-6">
             <img src={CompanyLogo2} alt="Company Logo 2" className="h-[100px] sm:h-[120px] object-contain w-auto" />
           </div>
-          <p className="text-gray-400 mb-2">
+          <p className="text-gray-300 mb-2">
             Capinex Inc. is an all-in-one financial ecosystem, helping 10
             million businesses and individuals access seamless payments,
             banking, credit, and business management tools since 2019.
           </p>
           <div className="col-span-3 mt-3">
             <h4 className="font-semibold mb-2">Connect with us</h4>
-            <p className="text-gray-400 mb-4">support@capinex.in</p>
+            <p className="text-gray-300 mb-4">support@capinex.in</p>
 
             <div className="flex justify-between items-center gap-6">
               <div className="flex gap-4">
@@ -36,35 +36,35 @@ export const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaLinkedinIn className="hover:text-white text-gray-400" />
+                  <FaLinkedinIn className="hover:text-white text-gray-300" />
                 </a>
                 <a
                   href="https://x.com/capinex52020"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaTwitter className="hover:text-white text-gray-400" />
+                  <FaTwitter className="hover:text-white text-gray-300" />
                 </a>
                 <a
                   href="https://www.instagram.com/capinexmoneymarkfinancepvt/?hl=en"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaInstagram className="hover:text-white text-gray-400" />
+                  <FaInstagram className="hover:text-white text-gray-300" />
                 </a>
                 <a
                   href="https://www.youtube.com/@CapinexMoneyMarkFinance"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaYoutube className="hover:text-white text-gray-400" />
+                  <FaYoutube className="hover:text-white text-gray-300" />
                 </a>
                 <a
                   href="https://www.facebook.com/profile.php?id=61555631681527"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaFacebookF className="hover:text-white text-gray-400" />
+                  <FaFacebookF className="hover:text-white text-gray-300" />
                 </a>
               </div>
             </div>
@@ -74,7 +74,7 @@ export const Footer = () => {
         {/* Column 2: Company Links */}
         <div className="md:order-2">
           <h4 className="font-semibold mb-4">Company</h4>
-          <ul className="space-y-2 text-gray-400">
+          <ul className="space-y-2 text-gray-300">
             <li>
               <Link to="/about-us">About Us</Link>
             </li>
@@ -100,7 +100,7 @@ export const Footer = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* First half of services */}
-            <ul className="space-y-2 text-gray-400">
+            <ul className="space-y-2 text-gray-300">
               <li>
                 <Link to="/loans/personal-loan">Personal loan</Link>
               </li>
@@ -129,7 +129,7 @@ export const Footer = () => {
             </ul>
 
             {/* Second half of services */}
-            <ul className="space-y-2 text-gray-400">
+            <ul className="space-y-2 text-gray-300">
               <li>
                 <Link to="/loans/project-loans">Project loans</Link>
               </li>
@@ -149,7 +149,7 @@ export const Footer = () => {
 
       {/* Row 4: Address Blocks */}
       <div className="max-w-7xl mx-auto mt-5 md:mt-5">
-        <h2 className="text-2xl font-bold text-white-300 mb-6 text-center">
+        <h2 className="text-2xl font-bold text-white mb-6 text-center">
           Our Branch Network
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
@@ -158,7 +158,7 @@ export const Footer = () => {
               <h4 className="font-semibold mb-2 text-[#0EA5E9]">
                 Branch Network
               </h4>
-              <p className="text-gray-500 leading-relaxed text-sm">
+              <p className="text-gray-300 leading-relaxed text-sm">
                 {i === 0 && (
                   <>
                     1710, Dr Rajkumar Rd, Prakash Nagar,
@@ -197,7 +197,7 @@ export const Footer = () => {
       {/* Row 3: Connect With Us - Desktop only */}
 
       {/* Bottom Footer - Legal */}
-      <div className="border-t border-gray-700 mt-10 pt-6 text-gray-400 text-xs max-w-7xl mx-auto">
+      <div className="border-t border-gray-700 mt-10 pt-6 text-gray-300 text-xs max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <p>&copy; 2025, Capinex</p>
           <div className="flex gap-4">
@@ -209,7 +209,7 @@ export const Footer = () => {
             </a>
           </div>
         </div>
-        <p className="mt-6 text-gray-500 leading-relaxed">
+        <p className="mt-6 text-gray-400 leading-relaxed">
           © 2025 Capinex. Capinex is a financial services provider operating in
           India. Unauthorised reproduction or redistribution of any copyrighted
           material on this website or Capinex’s digital platforms is strictly

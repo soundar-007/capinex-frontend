@@ -353,8 +353,7 @@ border:5px inset rgb(140, 137, 52);
 
 .card .content h2 {
       font-size: 23px;
-    /* color: #ffffff; */
-    color: #000;
+    color: #ffffff;
     margin-bottom: 15px;
     font-weight: 500;
     font-family: "REM", sans-serif;
@@ -363,9 +362,7 @@ border:5px inset rgb(140, 137, 52);
 .card .content p {
     color: #fff;
     line-height: 1.5em;
-    color: #000;
     font-size: 16px;
-    /* font-family: emoji; */
     font-family: "REM", sans-serif;
 }
 
@@ -388,19 +385,18 @@ border:5px inset rgb(140, 137, 52);
 
 .m-view a {
   font-size: 16px; /* Adjust the font size */
-  color: #f2f2f2; /* Link color */
+  color: #fff; /* Link color */
   text-decoration: underline; /* Remove underline */
   font-weight: 500;
   transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
   font-size: 17px;
       font-family: "REM", sans-serif;
 
-    /* font-family: emoji; */
 }
 
 .m-view a:hover {
   transition: 0.5s;
-  color: #000000; /* Darken color on hover */
+  color: #eee; /* Darken color on hover */
   transform: scale(1.1); /* Slight zoom effect */
   text-decoration: underline; /* Add underline on hover */
 }
@@ -530,9 +526,7 @@ border:5px inset rgb(140, 137, 52);
 .m-view a {
   display: inline-block;
   padding: 10px 20px;
-  /* background: #007bff; */
-  /* color: #fff; */
-  color: #000;
+  color: #fff;
   border-radius: 5px;
   text-decoration: none;
   transition: background 0.3s ease;

@@ -273,6 +273,7 @@ const handleApplyNow = () => {
                       }`}
                     />
                   ))}
+                  <div className="absolute inset-0 bg-blue-500/20 mix-blend-multiply pointer-events-none"></div>
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
 
                   {/* Overlay Content */}

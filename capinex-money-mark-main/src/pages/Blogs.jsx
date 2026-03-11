@@ -274,10 +274,10 @@ function App() {
                     className="w-full h-68 object-cover"
                   />
                   <div className="p-4">
-                    <h2 className="text-md font-semibold leading-tight">
+                    <h2 className="text-md font-semibold leading-tight text-white">
                       {article.title}
                     </h2>
-                    <div className="mt-2 text-sm text-gray-500 flex items-center justify-between">
+                    <div className="mt-2 text-sm text-white flex items-center justify-between">
                       <span>{article.readTime} min read</span>
                       <span>{article.date}</span>
                     </div>

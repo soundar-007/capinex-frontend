@@ -1391,7 +1391,7 @@ const points = [
                         </span>
                       </div>
                       <h3
-                        className="font-semibold text-sm"
+                        className="font-semibold text-white text-sm"
                         dangerouslySetInnerHTML={{
                           __html:
                             review?.feedback
@@ -1401,10 +1401,10 @@ const points = [
                       ></h3>
 
                       <div
-                        className="text-gray-300 text-sm line-clamp-3"
+                        className="text-white text-sm line-clamp-3"
                         dangerouslySetInnerHTML={{ __html: review?.feedback }}
                       />
-                      <p className="text-gray-500 text-xs">
+                      <p className="text-white text-xs">
                         {review?.userName},{" "}
                         {new Date(review?.createdTime).toLocaleDateString(
                           "en-IN",
@@ -1459,7 +1459,7 @@ const points = [
                       }}
                     ></h3>
 
-                    <p className="text-gray-400 text-xs">
+                    <p className="text-white text-xs">
                       {reviews[current]?.userName},{" "}
                       {new Date(
                         reviews[current]?.createdTime

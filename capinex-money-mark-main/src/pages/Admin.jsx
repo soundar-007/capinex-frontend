@@ -98,7 +98,7 @@ const AdminLayout = ({ children }) => {
               </div>
               <div className="col-span-9 2xl:col-span-10">
                 <div className="h-[calc(100vh-4rem)] lg:h-[calc(100vh-5rem)] overflow-y-scroll">
-                <div className="p-10">
+                <div className="p-10 text-black">
         <h1 className="text-3xl font-semibold py-2">Welcome</h1>
         <p className="text-sm">Dashboard to view overall contents Created</p>
 
@@ -157,7 +157,7 @@ const AdminLayout = ({ children }) => {
               </div>
             </div>
           ) : isRendered ? (
-            <div className="flex justify-center py-10">
+            <div className="flex justify-center py-10 text-black">
               <div className="w-[500px] flex flex-col items-center gap-10">
                 <div className="text-2xl font-semibold">Admin Login</div>
                 <div className="space-y-2">
