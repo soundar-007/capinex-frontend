@@ -201,16 +201,16 @@ const Careers = () => {
               <div className="flex items-center justify-center space-x-2 text-cyan-400">
                 <Mail className="w-6 h-6" />
                 <a
-                  href="mailto:capinexhr06@gmail.com"
+                  href="mailto:hr@capinex.in"
                   className="text-xl font-semibold hover:text-cyan-300 transition-colors"
                 >
-                  capinexhr06@gmail.com
+                  hr@capinex.in
                 </a>
               </div>
             </div>
 
             <a
-              href="mailto:capinexhr06@gmail.com"
+              href="mailto:hr@capinex.in"
               className="inline-flex items-center justify-center px-8 py-4 bg-cyan-500 text-white rounded-xl hover:bg-cyan-600 transition-all duration-300 transform hover:-translate-y-1 group"
             >
               <span className="mr-2">Send Your Resume</span>
