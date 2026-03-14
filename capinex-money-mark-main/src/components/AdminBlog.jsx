@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { Button } from "antd";
-import AdminLayout from "./AdminLayout";
 import BlogTable from "./Tables/BlogTable";
 import TestimonialTable from "./Tables/TestimonialTable";
 import ClientTable from "./Tables/ClientTable";
+import JobTable from "./Tables/JobTable";
 import {
   getAllBlogsApi,
   deleteBlogApi,
@@ -13,6 +13,8 @@ import {
   deleteTestimonialApi,
   getAllClientsApi,
   deleteClientApi,
+  getAllJobsApi,
+  deleteJobApi
 } from "../api/resource";
 import { adminBaseurl } from "./utils";
 
@@ -26,12 +28,14 @@ const AdminBlog = () => {
     blogs: { get: getAllBlogsApi, del: deleteBlogApi },
     testimonials: { get: getAllTestimonialsApi, del: deleteTestimonialApi },
     logo: { get: getAllClientsApi, del: deleteClientApi },
+    jobs: { get: getAllJobsApi, del: deleteJobApi },
   };
 
   const tableMap = {
     blogs: BlogTable,
     testimonials: TestimonialTable,
     logo: ClientTable,
+    jobs: JobTable,
   };
 
   const selectedApi = apiMap[key] || {};
@@ -49,7 +53,7 @@ const AdminBlog = () => {
       : data?.data?.detail[0]?.[key] || [];
 
   return (
-    <AdminLayout>
+    <>
       <div className="p-10 lg:p-14 space-y-14">
         <div className="flex justify-between gap-10 items-center">
           <div className="text-3xl font-semibold capitalize">{key}</div>
@@ -78,7 +82,7 @@ const AdminBlog = () => {
           <div>Invalid Key</div>
         )}
       </div>
-    </AdminLayout>
+    </>
   );
 };
 

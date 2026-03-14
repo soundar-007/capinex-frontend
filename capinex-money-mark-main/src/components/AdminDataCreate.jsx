@@ -3,11 +3,10 @@ import { useQuery } from "@tanstack/react-query";
 import { useParams, useNavigate } from "react-router-dom";
 import { Spin } from "antd";
 import { RiArrowLeftSLine } from "react-icons/ri";
-
-import AdminLayout from "../components/AdminLayout";
 import EditorForm  from "./Forms/BlogForm";
 import TestimonialForm from "./Forms/TestimonialForm";
 import LogoForm from "./Forms/LogoForm";
+import JobForm from "./Forms/JobForm";
 import {
   createBlogApi,
   updateBlogApi,
@@ -18,6 +17,9 @@ import {
   createClientApi,
   updateClientApi,
   getClientByIdApi,
+  createJobApi,
+  updateJobApi,
+  getJobByIdApi,
   // getLogoByIdApi,
 } from "../api/resource";
 import { adminBaseurl, InitialContentValue } from "../components/utils";
@@ -50,6 +52,13 @@ const EditBlog = () => {
       update: updateClientApi,
       form: LogoForm,
       redirect: "/admin/logo",
+    },
+    jobs: {
+      get: getJobByIdApi,
+      create: createJobApi,
+      update: updateJobApi,
+      form: JobForm,
+      redirect: "/admin/jobs",
     },
   };
 
@@ -111,7 +120,7 @@ const EditBlog = () => {
   };
 
   return (
-    <AdminLayout>
+    <>
       <div className="p-10 lg:p-14 space-y-10">
         <div className="text-3xl font-semibold flex gap-3">
           <div
@@ -126,7 +135,7 @@ const EditBlog = () => {
         </div>
         {renderForm()}
       </div>
-    </AdminLayout>
+    </>
   );
 };
 

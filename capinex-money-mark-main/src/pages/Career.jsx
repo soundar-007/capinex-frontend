@@ -7,9 +7,21 @@ import {
   GraduationCap,
   Send,
   ArrowRight,
+  MapPin,
+  Clock,
+  IndianRupee,
 } from "lucide-react";
 import { Helmet } from "react-helmet";
+import { useQuery } from "@tanstack/react-query";
+import { getPublishedJobsApi } from "../api/resource";
 const Careers = () => {
+  const { data: jobsData, isPending } = useQuery({
+    queryKey: ["published-jobs"],
+    queryFn: () => getPublishedJobsApi(1, 100),
+  });
+
+  const jobs = jobsData?.data?.detail[0]?.jobs || [];
+
   return (
     <>
     <Helmet>
@@ -189,8 +201,86 @@ const Careers = () => {
           </div>
         </section>
 
-        {/* Apply Now Section */}
+        {/* Current Openings Section */}
         <section className="py-20 bg-[#1a202c]">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl font-bold text-white mb-4">
+                Current Openings
+              </h2>
+              <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+                Discover your next career move and join us in building the future of financial services.
+              </p>
+            </div>
+
+            {isPending ? (
+              <div className="flex justify-center items-center py-20">
+                <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-cyan-500"></div>
+              </div>
+            ) : jobs.length === 0 ? (
+              <div className="bg-[#0a1628] rounded-xl p-10 text-center border border-gray-700">
+                <Briefcase className="w-16 h-16 text-gray-500 mx-auto mb-4" />
+                <h3 className="text-xl font-semibold text-white mb-2">No Openings Right Now</h3>
+                <p className="text-gray-400">
+                  We don't have any specific open roles at the moment, but we are always looking for great talent. Feel free to send your resume!
+                </p>
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {jobs.map((job) => (
+                  <div
+                    key={job._id}
+                    className="bg-[#0a1628] rounded-2xl flex flex-col border border-gray-700 hover:border-cyan-500/50 hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-cyan-900/20 transition-all duration-300 overflow-hidden"
+                  >
+                    <div className="p-8 flex-grow">
+                      <h3 className="text-2xl font-bold text-white mb-4 line-clamp-2">
+                        {job.title}
+                      </h3>
+                      
+                      <div className="space-y-3 mb-6">
+                        <div className="flex items-center text-gray-300 font-medium">
+                          <MapPin className="w-4 h-4 mr-3 text-cyan-400" />
+                          {job.location}
+                        </div>
+                        <div className="flex items-center text-gray-300 font-medium">
+                          <Clock className="w-4 h-4 mr-3 text-cyan-400" />
+                          {job.jobType}
+                        </div>
+                        {job.salary && (
+                          <div className="flex items-center text-green-400 font-medium">
+                            <IndianRupee className="w-4 h-4 mr-3" />
+                            {job.salary}
+                          </div>
+                        )}
+                      </div>
+
+                      <div className="mb-6">
+                        <h4 className="text-sm font-semibold text-gray-400 uppercase tracking-wider mb-2">Requirements Sneak Peek</h4>
+                        <div 
+                          className="text-gray-300 text-sm line-clamp-3 prose prose-invert max-w-none"
+                          dangerouslySetInnerHTML={{ __html: job.requirements }}
+                        />
+                      </div>
+                    </div>
+                    
+                    <div className="p-6 bg-[#111c30] border-t border-gray-700/50 mt-auto">
+                      <a
+                        href={`mailto:hr@capinex.in?subject=Application for ${job.title}`}
+                        className="w-full flex items-center justify-center px-6 py-3 bg-cyan-500 hover:bg-cyan-600 active:scale-95 text-white font-semibold rounded-xl transition-all duration-200"
+                      >
+                        Apply Now
+                        <ArrowRight className="w-4 h-4 ml-2" />
+                      </a>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        </section>
+
+        {/* Apply Now Section */}
+        <section className="py-20 bg-[#0a1628]">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-3xl font-bold text-white mb-6">Apply Now</h2>
             <p className="text-lg text-gray-300 mb-8">

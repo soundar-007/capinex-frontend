@@ -15,9 +15,11 @@ import Contact from './pages/Contact';
 import AdminBlog from './components/AdminBlog';
 import AdminHome from './components/AdminHome';
 import AdminDataCreate from './components/AdminDataCreate';
+import AdminLayout from './components/AdminLayout';
 import Careers from './pages/Career';
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import CookiePolicyPage from './pages/CookiePolicyPage';
+import EligibilityModal from './components/EligibilityModal';
 
 function App() {
   return (
@@ -27,6 +29,7 @@ function App() {
       <div className="App">
         {/* Always visible FeedbackButton placed here */}
         <FeedbackButton />
+        <EligibilityModal />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<About />} />
@@ -39,11 +42,13 @@ function App() {
           <Route path="/cookie-policy" element={<CookiePolicyPage />} />
           {/* Catch-all route for 404 Not Found */}
           <Route path="/careers" element={<Careers />} />
-          {/* Admin Routes */}
-          <Route path="/admin/home" element={<AdminHome />} />
-          <Route path="/admin/:key" element={<AdminBlog />} />
-          {/* <Route path="/admin/:key/create" element={<AdminDataCreate />} /> */}
-          <Route path="/admin/:key/:blogid" element={<AdminDataCreate />} />
+          
+          {/* Admin Routes - Nested to prevent layout flickering */}
+          <Route path="/admin" element={<AdminLayout />}>
+            <Route path="home" element={<AdminHome />} />
+            <Route path=":key" element={<AdminBlog />} />
+            <Route path=":key/:blogid" element={<AdminDataCreate />} />
+          </Route>
 
         </Routes>
       </div>

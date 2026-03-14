@@ -117,6 +117,29 @@ export const deleteBlogApi = (id) => {
 };
 
 
+// Jobs / Careers
+export const getAllJobsApi = (page, limit) => {
+  return blogAxios.get(`/jobs/show?page=${page}&limit=${limit || 10}`);
+};
+export const getPublishedJobsApi = (page, limit) => {
+  return blogAxios.get(
+    `/jobs/show?page=${page}&limit=${limit || 10}&action_type=Publish`
+  );
+};
+export const getJobByIdApi = (id) => {
+  return blogAxios.get(`/jobs/show/${id}`);
+};
+export const createJobApi = (data) => {
+  return blogAxios.post(`/jobs/create`, data);
+};
+export const updateJobApi = ({ id, data }) => {
+  return blogAxios.patch(`/jobs/modify/${id}`, data);
+};
+export const deleteJobApi = (id) => {
+  return blogAxios.delete(`/jobs/delete/${id}`);
+};
+
+
 export const getAllItemsApi = (key, page = 1, limit = 10) => {
   return blogAxios.get(`/${key}?page=${page}&limit=${limit}`);
 };

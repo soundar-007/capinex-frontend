@@ -947,8 +947,8 @@ const points = [
 
       <div className=" flex justify-center items-center h-22">
         <h1 className="text-2xl font-bold relative">
-          <span className="bg-[#0EA5E9] px-1 absolute inset-0 w-[210px] -left-8 h-3 top-4 z-0 rounded-sm" />
           <span className="relative z-10 text-[#002060]">Our Services</span>
+          <span className="bg-[#0EA5E9] px-1 absolute inset-0 w-[210px] -left-8 h-2 top-4 z-0 rounded-sm" />
         </h1>
       </div>
 

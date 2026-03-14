@@ -1,5 +1,4 @@
 import React from "react";
-import AdminLayout from "./AdminLayout";
 import { useQuery } from "@tanstack/react-query";
 import { getAllBlogsApi, getAllTestimonialsApi, getAllClientsApi } from "../api/resource";
 import { FaBlog } from "react-icons/fa6";
@@ -27,7 +26,7 @@ const AdminHome = () => {
   });
 
   return (
-    <AdminLayout>
+    <>
       <div className="p-10">
         <div className="text-3xl font-semibold py-2">Welcome</div>
         <div className="text-sm">
@@ -97,7 +96,7 @@ const AdminHome = () => {
           </div>
         </div>
       </div>
-    </AdminLayout>
+    </>
   );
 };
 

@@ -53,7 +53,7 @@ const CustomInput = ({
         <div>
           <label
             htmlFor={label}
-            className="flex justify-start py-1 gap-2 font-semibold items-center"
+            className="flex justify-start py-1 gap-2 font-semibold items-center text-white"
           >
             <span>
               {label}

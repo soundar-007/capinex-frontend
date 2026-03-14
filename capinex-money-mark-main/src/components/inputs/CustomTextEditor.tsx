@@ -54,7 +54,7 @@ const CustomTextEditor = ({
         <div>
           <label
             htmlFor={label}
-            className="flex justify-start py-1 font-semibold"
+            className="flex justify-start py-1 font-semibold text-white"
           >
             {label}
           </label>

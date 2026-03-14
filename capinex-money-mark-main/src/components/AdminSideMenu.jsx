@@ -5,6 +5,7 @@ import { GrResources } from "react-icons/gr";
 import { HiOutlineHome } from "react-icons/hi";
 import { CgNotes } from "react-icons/cg";
 import { BiSolidMessageDetail  } from "react-icons/bi";
+import { MdOutlineWork } from "react-icons/md";
 import { CiLogout } from "react-icons/ci";
 import { useLocation, useNavigate } from "react-router-dom";
 import { adminBaseurl } from "./utils";
@@ -40,6 +41,11 @@ const AdminSideMenu = ({ onlogout }) => {
       path: `${adminBaseurl}/testimonials`,
       label: <Menulabel label="Testimonials" icon={<BiSolidMessageDetail />} />,
       key: "testimonials",
+    },
+    {
+      path: `${adminBaseurl}/jobs`,
+      label: <Menulabel label="Careers" icon={<MdOutlineWork />} />,
+      key: "jobs",
     },
   ];
 
