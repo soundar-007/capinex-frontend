@@ -1,0 +1,15 @@
+
+> moneymaker-fe@0.0.0 build
+> vite build
+
+[36mvite v6.3.5 [32mbuilding for production...[36m[39m
+transforming...
+[32m✓[39m 137 modules transformed.
+[31m✗[39m Build failed in 1.47s
+[31merror during build:
+[31mCould not resolve "../components/BrandSlider" from "src/pages/BusinessLoan.jsx"[31m
+file: [36mC:/Users/Soundar J/Downloads/capinex-money-mark-main/capinex-money-mark-main/src/pages/BusinessLoan.jsx[31m
+    at getRollupError (file:///C:/Users/Soundar%20J/Downloads/capinex-money-mark-main/capinex-money-mark-main/node_modules/rollup/dist/es/shared/parseAst.js:401:41)
+    at error (file:///C:/Users/Soundar%20J/Downloads/capinex-money-mark-main/capinex-money-mark-main/node_modules/rollup/dist/es/shared/parseAst.js:397:42)
+    at ModuleLoader.handleInvalidResolvedId (file:///C:/Users/Soundar%20J/Downloads/capinex-money-mark-main/capinex-money-mark-main/node_modules/rollup/dist/es/shared/node-entry.js:21427:24)
+    at file:///C:/Users/Soundar%20J/Downloads/capinex-money-mark-main/capinex-money-mark-main/node_modules/rollup/dist/es/shared/node-entry.js:21387:26[39m

@@ -20,6 +20,7 @@ import Careers from './pages/Career';
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import CookiePolicyPage from './pages/CookiePolicyPage';
 import EligibilityModal from './components/EligibilityModal';
+import BusinessLoan from './pages/BusinessLoan';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<About />} />
+          <Route path="/loans/business-loan" element={<BusinessLoan />} />
           <Route path="/loans/:loanName" element={<Detail />} />
           <Route path="/blogs" element={<Blogs />} />
           <Route path="/blogs/:id" element={<BlogDetails />} />

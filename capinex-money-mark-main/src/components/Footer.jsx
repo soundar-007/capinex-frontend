@@ -21,9 +21,9 @@ export const Footer = () => {
             <img src={CompanyLogo2} alt="Company Logo 2" className="h-[100px] sm:h-[120px] object-contain w-auto" />
           </div>
           <p className="text-gray-300 mb-2">
-            Capinex Inc. is an all-in-one financial ecosystem, helping 10
-            million businesses and individuals access seamless payments,
-            banking, credit, and business management tools since 2019.
+            Capinex Inc. is an all-in-one financial ecosystem, helping
+            businesses and individuals access seamless payments,
+            banking, credit, and business management tools.
           </p>
           <div className="col-span-3 mt-3">
             <h4 className="font-semibold mb-2">Connect with us</h4>
@@ -199,7 +199,7 @@ export const Footer = () => {
       {/* Bottom Footer - Legal */}
       <div className="border-t border-gray-700 mt-10 pt-6 text-gray-300 text-xs max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-          <p>&copy; 2025, Capinex</p>
+          <p>&copy; 2026, Capinex</p>
           <div className="flex gap-4">
             <a href="/privacy-policy" className="hover:text-white">
               Privacy Policy
@@ -210,7 +210,8 @@ export const Footer = () => {
           </div>
         </div>
         <p className="mt-6 text-gray-400 leading-relaxed">
-          © 2025 Capinex. Capinex is a financial services provider operating in
+          © 2026 Capinex MoneyMark Finance Pvt. Ltd. CIN: U64990KA2023PTC173670 | RBI NBFC Reg: [X] | GSTIN: [X] | Registered Office: [X].<br/>
+          Capinex is a financial services provider operating in
           India. Unauthorised reproduction or redistribution of any copyrighted
           material on this website or Capinex’s digital platforms is strictly
           prohibited. By clicking certain links, you may be redirected to
