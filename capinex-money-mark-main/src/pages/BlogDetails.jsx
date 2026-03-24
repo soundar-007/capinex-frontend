@@ -75,24 +75,27 @@ const BlogPost = () => {
   return (
     <>
       <Helmet>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{post.title} | Capinex Blog</title>
         <meta name="description" content={post.excerpt} />
         <meta
           name="keywords"
-          content={post.category + ", blog, loan, financial advice"}
+          content={post.category + ", blog, loan, financial advice, Capinex"}
         />
         <meta name="author" content={post.author} />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href={window.location.href} />
+
         <meta property="og:title" content={post.title} />
         <meta property="og:description" content={post.excerpt} />
         <meta property="og:image" content={post.bannerImageUrl} />
         <meta property="og:url" content={window.location.href} />
+        <meta property="og:type" content="article" />
+
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:creator" content="@username" />
+        <meta name="twitter:site" content="@capinex" />
         <meta name="twitter:title" content={post.title} />
         <meta name="twitter:description" content={post.excerpt} />
         <meta name="twitter:image" content={post.bannerImageUrl} />
-        <title>{post.title}</title>
       </Helmet>
 
       <main>

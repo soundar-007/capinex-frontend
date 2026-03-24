@@ -78,9 +78,12 @@ const handleFormSubmit = (e) => {
         />
         <meta
           name="keywords"
-          content="contact, finance, loans, financial solutions, Capinex MoneyMark, customer service"
+          content="contact Capinex, finance, loans, financial solutions, Capinex MoneyMark, customer service, loan enquiry"
         />
         <meta name="author" content="Capinex MoneyMark Finance Pvt. Ltd." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.capinex.in/contact-us" />
+
         <meta
           property="og:title"
           content="Contact Us | Capinex MoneyMark Finance Pvt. Ltd."
@@ -91,22 +94,25 @@ const handleFormSubmit = (e) => {
         />
         <meta
           property="og:image"
-          content="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg"
+          content="https://www.capinex.in/logo.png"
         />
-        <meta property="og:url" content="https://www.capinex.com/contact" />
+        <meta property="og:url" content="https://www.capinex.in/contact-us" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@capinex" />
         <meta
           name="twitter:title"
           content="Contact Us | Capinex MoneyMark Finance Pvt. Ltd."
         />
         <meta
           name="twitter:description"
-          content="Get in touch with Capinex MoneyMark Finance Pvt. Ltd. for fast loan processing and expert financial solutions."
+          content="Get in touch with Capinex MoneyMark Finance for fast loan processing and expert financial solutions."
         />
         <meta
           name="twitter:image"
-          content="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg"
+          content="https://www.capinex.in/logo.png"
         />
-        <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
       <main className="min-h-screen mt-16 bg-[#0a1628]">
         {/* Hero Section */}

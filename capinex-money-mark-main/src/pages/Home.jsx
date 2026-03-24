@@ -467,10 +467,11 @@ const points = [
           name="keywords"
           content="Capinex MoneyMark, Moneymark Finance, Personal Loans India, Instant Loan Approval, Vehicle Equity Loans, Business Loans, MSME Loans, Home Loans, Loan Against Property, Fast Loan App, Best Loan Platform, Compare Loans, CIBIL Score, EMI Calculator, Loan Disbursement, Quick Cash, Low Interest Loans, Online Loan Platform"
         />
-        <meta name="author" content="Capinex MoneyMark Team" />
+        <meta name="author" content="Capinex MoneyMark Finance Pvt. Ltd." />
         <meta name="robots" content="index, follow" />
         <meta name="language" content="English" />
         <meta name="revisit-after" content="7 days" />
+        <link rel="canonical" href="https://www.capinex.in/" />
 
         <meta
           property="og:title"
@@ -480,10 +481,10 @@ const points = [
           property="og:description"
           content="Experience financial freedom with Capinex MoneyMark. Get instant approval on personal and vehicle equity loans with predictable monthly payments and minimal documentation."
         />
-        <meta property="og:url" content="https://yourdomain.com/" />
+        <meta property="og:url" content="https://www.capinex.in/" />
         <meta
           property="og:image"
-          content="https://yourdomain.com/assets/home-og-image.jpg"
+          content="https://www.capinex.in/logo.png"
         />
         <meta property="og:type" content="website" />
         <meta
@@ -502,7 +503,7 @@ const points = [
         />
         <meta
           name="twitter:image"
-          content="https://yourdomain.com/assets/home-og-image.jpg"
+          content="https://www.capinex.in/logo.png"
         />
         <meta name="twitter:site" content="@capinex" />
       </Helmet>

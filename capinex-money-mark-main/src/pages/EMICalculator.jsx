@@ -66,32 +66,35 @@ const EMICalculator = () => {
         <title>
           EMI Loan Calculator | Check Your Monthly EMI Online – Capinex
         </title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Calculate your loan EMI with ease using our EMI calculator. Get accurate calculations based on your loan amount and tenure."
+          content="Calculate your loan EMI with ease using Capinex's EMI calculator. Get accurate calculations for personal, business, home, car & gold loans."
         />
         <meta
           name="keywords"
-          content="EMI calculator, loan EMI, loan amount, loan tenure, interest rate, loan planner, financial tools"
+          content="EMI calculator, loan EMI, loan amount, loan tenure, interest rate, loan planner, financial tools, Capinex EMI calculator"
         />
-        <meta name="author" content="Jeevankumar S" />
-        <meta property="og:title" content="EMI Calculator" />
+        <meta name="author" content="Capinex MoneyMark Finance Pvt. Ltd." />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.capinex.in/emi-calculator" />
+
+        <meta property="og:title" content="EMI Calculator | Plan Your Loan Repayment – Capinex" />
         <meta
           property="og:description"
           content="Plan your loan with our easy-to-use EMI calculator. Get instant calculations and make informed decisions."
         />
-        <meta property="og:image" content="URL_TO_IMAGE" />
-        <meta property="og:url" content="URL_OF_YOUR_PAGE" />
+        <meta property="og:image" content="https://www.capinex.in/logo.png" />
+        <meta property="og:url" content="https://www.capinex.in/emi-calculator" />
+        <meta property="og:type" content="website" />
+
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:creator" content="@username" />
-        <meta name="twitter:title" content="EMI Calculator" />
+        <meta name="twitter:site" content="@capinex" />
+        <meta name="twitter:title" content="EMI Calculator | Plan Your Loan – Capinex" />
         <meta
           name="twitter:description"
           content="Plan your loan with our easy-to-use EMI calculator."
         />
-        <meta name="twitter:image" content="URL_TO_IMAGE" />
+        <meta name="twitter:image" content="https://www.capinex.in/logo.png" />
       </Helmet>
       <main className="min-h-screen mt-16 bg-[#0a1628] py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

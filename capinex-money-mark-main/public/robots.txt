@@ -1,0 +1,10 @@
+# Robots.txt for Capinex MoneyMark Finance
+User-agent: *
+Allow: /
+
+# Disallow admin and internal routes
+Disallow: /admin/
+Disallow: /admin/*
+
+# Sitemap
+Sitemap: https://www.capinex.in/sitemap.xml

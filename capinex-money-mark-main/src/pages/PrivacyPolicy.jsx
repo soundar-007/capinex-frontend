@@ -1,9 +1,17 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 const PrivacyPolicy = () => {
   return (
-    <div className="max-w-4xl mx-auto mt-9 px-4 py-10 text-gray-300 bg-[#0a1628] min-h-screen">
-      <h1 className="text-3xl font-bold mb-6 text-white">Privacy Policy</h1>
+    <>
+      <Helmet>
+        <title>Privacy Policy | Capinex MoneyMark Finance Pvt. Ltd.</title>
+        <meta name="description" content="Read the Privacy Policy of Capinex MoneyMark Finance. Learn how we collect, use, and protect your personal information and data." />
+        <meta name="robots" content="noindex, follow" />
+        <link rel="canonical" href="https://www.capinex.in/privacy-policy" />
+      </Helmet>
+      <div className="max-w-4xl mx-auto mt-9 px-4 py-10 text-gray-300 bg-[#0a1628] min-h-screen">
+        <h1 className="text-3xl font-bold mb-6 text-white">Privacy Policy</h1>
 
       <p className="mb-4">
         <strong>Capniex.in</strong> including online platform(s), its mobile
@@ -117,6 +125,7 @@ const PrivacyPolicy = () => {
         .
       </p>
     </div>
+    </>
   );
 };
 

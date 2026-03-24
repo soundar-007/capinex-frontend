@@ -170,32 +170,32 @@ export default function Detail() {
   return (
     <>
       <Helmet>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        {/* Meta Tags for SEO */}
-        <title>{loanData?.seoTitle || `${loanData.subtitle}-${loanData.type}`}</title>
+        {/* Title & Meta */}
+        <title>{loanData?.seoTitle || `${loanData.subtitle} - ${loanData.type} | Capinex`}</title>
         <meta
           name="description"
           content={
             loanData?.metaDescription ||
             loanData.description ||
-            "Find out more about various loan options and apply today."
+            "Find out more about various loan options and apply today with Capinex MoneyMark."
           }
         />
         <meta
           name="keywords"
-          content="loan, personal loan, business loan, car loan, home loan, mortgage loan"
+          content={`${loanData.type}, ${loanData.type} India, best ${loanData.type}, apply ${loanData.type} online, Capinex ${loanData.type}, low interest ${loanData.type}`}
         />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href={`https://www.capinex.in/loans/${loanName}`} />
 
-        {/* Open Graph Meta Tags for Social Media Sharing */}
+        {/* Open Graph */}
         <meta
           property="og:title"
-          content={loanData.subtitle || "Loan Details"}
+          content={loanData?.seoTitle || `${loanData.type} | Capinex MoneyMark`}
         />
         <meta
           property="og:description"
           content={
+            loanData?.metaDescription ||
             loanData.description ||
             "Explore different loan options and find the best one for you."
           }
@@ -203,20 +203,23 @@ export default function Detail() {
         <meta
           property="og:image"
           content={
-            loanData.images ? loanData.images[0] : "default-image-url.jpg"
+            loanData.images ? loanData.images[0] : "https://www.capinex.in/logo.png"
           }
         />
-        <meta property="og:url" content={window.location.href} />
+        <meta property="og:url" content={`https://www.capinex.in/loans/${loanName}`} />
         <meta property="og:type" content="website" />
 
-        {/* Twitter Card Meta Tags */}
+        {/* Twitter Card */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@capinex" />
         <meta
           name="twitter:title"
-          content={loanData.subtitle || "Loan Details"}
+          content={loanData?.seoTitle || `${loanData.type} | Capinex`}
         />
         <meta
           name="twitter:description"
           content={
+            loanData?.metaDescription ||
             loanData.description ||
             "Learn about various loan options and how to apply."
           }
@@ -224,10 +227,31 @@ export default function Detail() {
         <meta
           name="twitter:image"
           content={
-            loanData.images ? loanData.images[0] : "default-image-url.jpg"
+            loanData.images ? loanData.images[0] : "https://www.capinex.in/logo.png"
           }
         />
-        <meta name="twitter:card" content="summary_large_image" />
+
+        {/* BreadcrumbList Schema */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://www.capinex.in/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": loanData.type,
+                "item": `https://www.capinex.in/loans/${loanName}`
+              }
+            ]
+          })}
+        </script>
       </Helmet>
       {/* section one */}
 

@@ -227,11 +227,29 @@ const AboutPage = () => {
   return (
     <div className="min-h-screen bg-[#0a1628]">
       <Helmet>
-        <title>Capinex Money Mark: Fast & Transparent Financial Services</title>
+        <title>About Capinex MoneyMark | India's Trusted Loan Partner</title>
         <meta
           name="description"
-          content="Capinex MoneyMark Finance Pvt Ltd combines expertise and technology to offer inclusive financial products. Experience seamless service now!"
+          content="Learn about Capinex MoneyMark Finance – India's fast-growing financial platform. 20+ years expertise, quick approvals & transparent loan solutions."
         />
+        <meta
+          name="keywords"
+          content="about Capinex, Capinex MoneyMark, financial services India, loan company Bengaluru, trusted finance partner, quick loan approval"
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.capinex.in/about-us" />
+
+        <meta property="og:title" content="About Capinex MoneyMark | India's Trusted Loan Partner" />
+        <meta property="og:description" content="Capinex MoneyMark Finance Pvt Ltd combines expertise and technology to offer inclusive financial products. Experience seamless service now!" />
+        <meta property="og:url" content="https://www.capinex.in/about-us" />
+        <meta property="og:image" content="https://www.capinex.in/logo.png" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Capinex MoneyMark | India's Trusted Loan Partner" />
+        <meta name="twitter:description" content="Capinex MoneyMark Finance combines expertise and technology to offer inclusive financial products across India." />
+        <meta name="twitter:image" content="https://www.capinex.in/logo.png" />
+        <meta name="twitter:site" content="@capinex" />
       </Helmet>
       <section className="pt-32 pb-20 relative overflow-hidden bg-gradient-to-r from-blue-900 via-blue-800 to-blue-900">
         {/* Background Image */}

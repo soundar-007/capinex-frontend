@@ -25,9 +25,7 @@ const Careers = () => {
   return (
     <>
     <Helmet>
-  <title>Fintech Jobs at Capinex: Apply for Careers Now</title>
-  <meta charSet="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fintech Jobs at Capinex | Apply for Careers Now</title>
   <meta
     name="description"
     content="Capinex offers career opportunities in fintech and digital lending. Be part of a purpose-driven team. Apply today and grow with us!"
@@ -36,6 +34,20 @@ const Careers = () => {
     name="keywords"
     content="Capinex careers, fintech jobs, job openings, digital lending careers, finance jobs, work at Capinex, join Capinex, Capinex team"
   />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.capinex.in/careers" />
+
+  <meta property="og:title" content="Fintech Jobs at Capinex | Apply for Careers Now" />
+  <meta property="og:description" content="Capinex offers career opportunities in fintech and digital lending. Be part of a purpose-driven team." />
+  <meta property="og:url" content="https://www.capinex.in/careers" />
+  <meta property="og:image" content="https://www.capinex.in/logo.png" />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@capinex" />
+  <meta name="twitter:title" content="Fintech Jobs at Capinex | Apply for Careers Now" />
+  <meta name="twitter:description" content="Capinex offers career opportunities in fintech and digital lending. Join our team!" />
+  <meta name="twitter:image" content="https://www.capinex.in/logo.png" />
 </Helmet>
       <main className="mt-18 bg-[#0a1628]">
         {/* Hero Section */}

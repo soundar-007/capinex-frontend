@@ -1,9 +1,17 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 
 const CookiePolicyPage = () => {
   return (
-    <div className="max-w-4xl mx-auto px-4 py-8 mt-13 text-gray-300 bg-[#0a1628] min-h-screen">
-      <h1 className="text-3xl font-bold mb-6 text-white">Cookie Policy</h1>
+    <>
+      <Helmet>
+        <title>Cookie Policy | Capinex MoneyMark Finance Pvt. Ltd.</title>
+        <meta name="description" content="Read the Cookie Policy for Capinex MoneyMark Finance to understand how we use cookies and tracking technologies." />
+        <meta name="robots" content="noindex, follow" />
+        <link rel="canonical" href="https://www.capinex.in/cookie-policy" />
+      </Helmet>
+      <div className="max-w-4xl mx-auto px-4 py-8 mt-13 text-gray-300 bg-[#0a1628] min-h-screen">
+        <h1 className="text-3xl font-bold mb-6 text-white">Cookie Policy</h1>
 
       <p className="mb-4">
         Our website (<strong>capniex.in</strong>), portal and our app (which we collectively refer to as our "online resources") use cookies and similar tracking technologies, such as pixels, plugins, scripts and tags (collectively referred to as "cookies").
@@ -59,6 +67,7 @@ const CookiePolicyPage = () => {
         Email: <a href="mailto:info@capinex.in" className="text-cyan-400 underline">info@capinex.in</a>
       </p>
     </div>
+    </>
   );
 };
 

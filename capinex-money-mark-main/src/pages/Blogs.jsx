@@ -96,45 +96,26 @@ function App() {
   return (
     <>
       <Helmet>
-        <title>Capinex Finance Blog | Tips on Loans, Credit, and Money Management</title>
-        <meta
-          name="title"
-          content="Capinex Blog – Insights, Innovation & Growth Stories"
-        />
+        <title>Capinex Finance Blog | Tips on Loans, Credit & Money Management</title>
         <meta
           name="description"
           content="Explore expert insights, innovations, and real-world stories from Capinex. Stay updated with our latest blogs covering technology, finance, infrastructure, and more."
         />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.capinex.in/blogs" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourdomain.com/blogs" />
-        <meta
-          property="og:title"
-          content="Capinex Blog – Insights, Innovation & Growth Stories"
-        />
-        <meta
-          property="og:description"
-          content="Explore expert insights, innovations, and real-world stories from Capinex."
-        />
-        <meta
-          property="og:image"
-          content="https://yourdomain.com/assets/blog-og-image.jpg"
-        />
+        <meta property="og:url" content="https://www.capinex.in/blogs" />
+        <meta property="og:title" content="Capinex Blog – Insights, Innovation & Growth Stories" />
+        <meta property="og:description" content="Explore expert insights, innovations, and real-world stories from Capinex." />
+        <meta property="og:image" content="https://www.capinex.in/logo.png" />
 
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://yourdomain.com/blogs" />
-        <meta
-          property="twitter:title"
-          content="Capinex Blog – Insights, Innovation & Growth Stories"
-        />
-        <meta
-          property="twitter:description"
-          content="Explore expert insights, innovations, and real-world stories from Capinex."
-        />
-        <meta
-          property="twitter:image"
-          content="https://yourdomain.com/assets/blog-og-image.jpg"
-        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://www.capinex.in/blogs" />
+        <meta name="twitter:title" content="Capinex Blog – Insights, Innovation & Growth Stories" />
+        <meta name="twitter:description" content="Explore expert insights, innovations, and real-world stories from Capinex." />
+        <meta name="twitter:image" content="https://www.capinex.in/logo.png" />
+        <meta name="twitter:site" content="@capinex" />
       </Helmet>
 
       <main className="overflow-hidden pb-20 text-base font-medium tracking-tight text-white bg-[#0a1628]">
